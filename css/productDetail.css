@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+}
+.container {
+    max-width: 1600px;
+    width: 97%;
+    margin: 0 auto;
+}
+
+/***************** nav *****************/
+nav{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.nav {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo li {
+    list-style: none;
+}
+.nav .logo a img{
+    width: 170px;
+}
+
+ul.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+}
+ul.menu li {
+    width: auto;
+    list-style: none;
+    padding: 1rem;
+}
+ul.menu li a {
+    text-decoration: none;
+    color: #74411b;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav .menu-btn {
+    display: none;
+}
+@media screen and (max-width: 1750px) {
+    .nav {
+        padding: 0 2.5rem;
+    }
+    
+}
+@media screen and (max-width: 1050px) {
+    .nav .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    ul.menu .menu-times {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+    ul.menu {
+        background: #e89b5d;
+        position: fixed;
+        top: 42px;
+        right: -1000px;
+        flex-direction: column;
+        width: 400px;
+        height: 80vh;
+        padding: 2rem 0;
+        margin: 0;
+        z-index: 1000;
+        text-align: center;
+        cursor: pointer;
+        transition: .8s
+    }
+    ul.menu li {
+        margin: 1rem 0;
+        width: 100%;
+        padding: 1.5rem 0;
+        background: #e89b5d;
+        transition: .2s;
+    }
+    ul.menu li:hover {
+        background: #eeb485;
+    }
+    ul.menu.togglemenu {
+        right: 0;
+    }
+    nav .menu-btn i {
+        font-size: 35px;
+        color: #74411b;
+        text-decoration: none;
+    }
+}

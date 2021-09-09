@@ -2,14 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Detail</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/productDetail.css">
 </head>
 
 <body>
 
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <li><a href=""><img src="./asset/logo.png" alt=""></a></li>
+                </div>
+                <div class="menu-btn" onclick="openNavMenu()"><i class="fas fa-th"></i></div>
+                <ul class="menu" id="showmenu">
+                    <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
+                    <li><a href="">รู้จักพลีน</a></li>
+                    <li><a href="">ผลิตภัณฑ์พลีน</a></li>
+                    <li><a href="">ทานอย่างไรให้เห็นผล</a></li>
+                    <li><a href="">รีวิว</a></li>
+                    <li><a href="">ติดต่อสั่งซื้อ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end nav -->
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
