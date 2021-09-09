@@ -66,6 +66,9 @@ ul.menu li a {
     
 }
 @media screen and (max-width: 1050px) {
+    .nav {
+        padding: 0 1.5rem;
+    }
     .nav .menu-btn {
         display: block;
         cursor: pointer;
@@ -81,7 +84,7 @@ ul.menu li a {
         top: 42px;
         right: -1000px;
         flex-direction: column;
-        width: 400px;
+        width: 310px;
         height: 80vh;
         padding: 2rem 0;
         margin: 0;
@@ -109,3 +112,371 @@ ul.menu li a {
         text-decoration: none;
     }
 }
+
+/***************** productdetail *****************/
+
+section.productdetail {
+    padding-top: 120px;
+    background-color: #f8f5f3;
+    height: auto;
+    position: relative;
+}
+div.bg-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.bg-logo img{
+    position: absolute;
+    top: 400px;
+    width: 90%;
+    z-index: 1;
+}
+.position-box-top {
+    padding: 4rem 1rem 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.position-box-top a {
+    color: #74411b;
+    text-decoration: none;
+}
+
+.productdetail-flex {
+    display: flex;
+    z-index: 2;
+}
+.productdetail-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    z-index: 2;
+}
+.productdetail-left-show {
+    display: flex;
+}
+.productdetail-left-show a {
+    color: #f27626;
+}
+.productdetail-show-value {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.productdetail-show-value img {
+    padding: 2rem;
+    width: 100%;
+}
+.productdetail-left-show .back-btn {
+    position: relative;
+    font-size: 30px;
+    left: 30px;
+    transform: translateX(50%);
+    transform: translatey(50%);
+}
+.productdetail-left-show .forward-btn {
+    position: relative;
+    font-size: 30px;
+    left: -30px;
+    transform: translateX(50%);
+    transform: translatey(50%);
+}
+.productdetail-left-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+.productdetail-left-select img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.active {
+    border: 3px solid #e89b5d;
+}
+
+.productdetail-right {
+    width: 50%;
+    padding: 0 2rem;
+}
+.productdetail-right h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #f27626;
+}
+.productdetail-right h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f27626;
+}
+.productdetail-right p, .productdetail-right li {
+    font-size: 16px;
+    color: #74411b;
+}
+.productdetail-right-title, 
+.productdetail-right-benefit,
+.productdetail-right-ingrediant,
+.productdetail-right-howto {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f1af79 ;
+}
+.productdetail-right-benefit,
+.productdetail-right-ingrediant,
+.productdetail-right-howto,
+.productdetail-right-price {
+    padding-top: 1rem;
+}
+.productdetail-right-title {
+    line-height: 1;
+}
+.productdetail-right-price {
+    position: relative;
+}
+.productdetail-right-price span {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 5px;
+}
+.productdetail-right-price .cross:before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #74411b;
+    transform: rotate(7deg);
+    position: absolute;
+    top: 83px;
+}
+.productdetail-buy {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.productdetail-buy li {
+    list-style: none;
+}
+.productdetail-buy a img {
+    margin-left: 1rem;
+    width: 28px;
+}
+
+.position-box-bottom {
+    padding: 4rem 1rem 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.position-box-bottom a {
+    color: #74411b;
+    text-decoration: none;
+}
+@media screen and (max-width: 765px) {
+    .position-box-top, .position-box-bottom {
+        padding: 2rem 1rem;
+    }
+    .productdetail-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .productdetail-left, .productdetail-right {
+        width: 100%;
+    }
+    .productdetail-right {
+        padding: 2rem 1rem;
+    }
+}
+
+/***************** reviewer *****************/
+
+section.reviewer {
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: #faf1e1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.reviewer h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #f27321;
+    font-weight: 500;
+}
+section.reviewer .title img {
+    position: relative;
+    text-align: center;
+    padding: 2rem 7rem;
+}
+.reviewer-group {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewer-box {
+    padding-right: 3rem;
+}
+.reviewer-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviewer-review a img {
+    width: 345px;
+}
+.reviewer-review a:nth-child(2) {
+    background: #f27321;
+    margin-top: 1rem;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: -25px;
+}
+.pleant-social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.plean-youtube-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plean-youtube-box iframe {
+    width: 595px;
+    height: 400px;
+    z-index: 1;
+}
+.plean-youtube-box img {
+    position: absolute;
+    right: -140px;
+}
+
+
+footer {
+    background: #f27321;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+@media screen and (max-width: 1290px) {
+    .plean-youtube-box img {
+        right: -50px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .plean-youtube-box img {
+        right: -20px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .plean-youtube-box iframe {
+        width: 535px;
+        height: 370px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .plean-youtube-box iframe {
+        width: 400px;
+        height: 370px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .reviewer-box {
+        padding-right: 1.5rem;
+    }
+    .reviewer-review img {
+        width: 90%;
+    }
+    ul.reviewer {
+        padding-right: 2rem;
+    }
+}
+@media screen and (max-width: 747px) {
+    .reviewer-social h5, .reviewer-social p, ul.reviewer li a {
+        font-size: 14px;
+    }
+    .reviewer-box {
+        padding-right: .5rem;
+    }
+    ul.reviewer {
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width: 860px) {
+    .reviewer-group {
+        flex-direction: column;
+    }
+    .reviewer-box {
+        padding: 0;
+    }
+    .reviewer-review {
+        padding-top: 1rem;
+    }
+    .reviewer-review img {
+        width: 100%;
+        position: relative;
+        left: 27px;
+    }
+    .reviewer-review a:nth-child(2) {
+        left: 0;
+    }
+    .plean-social {
+        padding-top: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .plean-youtube-box iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .plean-youtube-box img {
+        right: -15px;
+        width: 210px;
+    }
+    .plean-youtube-box iframe {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 321px) {
+    .plean-youtube-box iframe {
+        height: 250px;
+    }
+    .plean-youtube-box img {
+        right: -10px;
+        width: 110px;
+    }
+}
+@media screen and (max-width: 430px) {
+    section.reviewer h1 {
+        font-size: 30px;
+    }
+    .reviewer-review a img {
+        width: 94%;
+    }
+    ul.reviewer {
+        padding-right: .7rem;
+    }
+    footer p{
+        font-size: 9px;
+    }
+}
+

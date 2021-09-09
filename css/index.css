@@ -66,6 +66,9 @@ ul.menu li a {
     
 }
 @media screen and (max-width: 1050px) {
+    .nav {
+        padding: 0 1.5rem;
+    }
     .nav .menu-btn {
         display: block;
         cursor: pointer;
@@ -81,7 +84,7 @@ ul.menu li a {
         top: 42px;
         right: -1000px;
         flex-direction: column;
-        width: 400px;
+        width: 310px;
         height: 80vh;
         padding: 2rem 0;
         margin: 0;
