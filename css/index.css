@@ -125,16 +125,20 @@ img {
 
 /***************** content *****************/
 
+#plean-toknow {
+    padding-top: 140px;
+}
+
 section.content {
     background: linear-gradient(#f4dfbd, #fff);
 }
 
 .plean-title {
-    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .plean-title h1 {
     font-size: 40px;
@@ -149,6 +153,18 @@ section.content {
     padding-top: 2rem;
     width: 60px;
 }
+.plean-title .prop-2 {
+    width: 88px;
+    position: absolute;
+    right: 27px;
+    top: 60px;
+}
+.plean-title .prop-3 {
+    width: 145px;
+    position: absolute;
+    left: 0px;
+    bottom: -530px;
+}
 
 .plean-toknow-box {
     display: flex;
@@ -157,18 +173,6 @@ section.content {
     margin-top: 2rem;
     position: relative;
     z-index: 1;
-}
-.plean-toknow-box .prop-2 {
-    width: 88px;
-    position: absolute;
-    right: 27px;
-    top: -70px;
-}
-.plean-toknow-box .prop-3 {
-    width: 145px;
-    position: absolute;
-    left: 0px;
-    bottom: 45px;
 }
 .plean-toknow-left {
     width: 330px;
@@ -313,7 +317,10 @@ section.content {
     }
 }
 @media screen and (max-width: 1050px) {
-    .plean-toknow-box .prop-3 {
+    .plean-title .prop-3 {
+        display: none;
+    }
+    .plean-title .prop-2 {
         display: none;
     }
 }
@@ -360,9 +367,6 @@ section.content {
 @media screen and (max-width: 585px) {
     .plean-toknow-box {
         flex-direction: column;
-    }
-    .plean-toknow-box .prop-2 {
-        display: none;
     }
     .plean-toknow-right {
         width: 100%;
@@ -443,9 +447,11 @@ section.content {
 
 /***************** product *****************/
 
+#plean-product {
+    padding-top: 140px;
+}
 section.product {
     background-color: #faf1e1;
-    padding-top: 4rem;
     padding-bottom: 10rem;
     position: relative;
 }
@@ -478,15 +484,32 @@ section.product {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1.5rem;
+    row-gap: 2rem;
 }
 .product-box {
-    width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 1;
+}
+.product-below {
+    background-color: #f6e7cc; 
+    width: 100%;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+.product-below:hover {
+    border-radius: 40%;
+}
+.product-below img{
+    padding: 3rem;
+}
+.product-text a {
+    text-decoration: none;
 }
 .product-box img {
     width: 100%;
@@ -597,12 +620,6 @@ section.benefits {
     justify-content: center;
     padding-top: 75px;
 }
-/* .benefits-top .line-top {
-    width: 5px;
-    height: 243px;
-    background-color: #f1af79;
-    margin: 0.5rem 2rem 0.5rem; 
-} */
 .benefits-text-top {
     padding-left: 3rem ;
 }
@@ -829,10 +846,10 @@ section.benefits {
 /***************** ingredient *****************/
 
 section.ingredient {
+    padding-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
-
 .ingredient-box-left {
     padding-top: 4rem;
     background-color: #e1e4cc;
@@ -876,7 +893,7 @@ section.ingredient {
 }
 @media screen and (max-width: 1230px) {
     .ingredient-left-title {
-        padding: 0 7rem 2rem 7rem;
+        padding: 1rem 5rem 2rem 7rem;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -905,7 +922,7 @@ section.ingredient {
 }
 @media screen and (max-width: 500px) {
     .ingredient-left-title {
-        padding: 2rem;
+        padding: 4rem 2rem 2rem 2rem;
     }
     .ingredient-left-img {
         padding: 1rem;
@@ -927,7 +944,7 @@ section.ingredient {
 /***************** connected & footer *****************/
 
 section.connected {
-    padding: 3rem 1rem 4rem 1rem;
+    padding: 7rem 1rem 4rem 1rem;
     background-color: #f8f5f3;
     width: 100%;
 }
@@ -944,15 +961,28 @@ section.connected h1 {
     align-items: center;
 }
 .connected-box {
+    position: relative;
     padding-right: 3rem;
 }
 .connected-review {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 .connected-review a img {
     width: 345px;
+    object-fit: cover;
+    transition: .5s;
+}
+.connected-review:hover .redstar {
+    opacity: 0;
+}
+.connected-review:hover .btn {
+    transition: .3s;
+    background: transparent;
+    border: 1px solid #74411b;
+    color: #74411b;
 }
 .connected-review a:nth-child(2) {
     background: #f27321;
@@ -966,11 +996,11 @@ section.connected h1 {
     left: -25px;
     border: 1px solid #f27321;
 }
-.connected-review a:nth-child(2):hover {
-    transition: .3s;
-    background: transparent;
-    border: 1px solid #74411b;
-    color: #74411b;
+.connected-review .redstar {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 48px;
 }
 .connected-social {
     display: flex;
@@ -1009,6 +1039,7 @@ ul.connected li a {
 }
 ul.connected li a i {
     color: #f27321;
+    transition: .2s;
 }
 ul.connected li a i img {
     width: 16px;
@@ -1016,7 +1047,12 @@ ul.connected li a i img {
     position: relative;
     top: 3px;
     left: -2px;
+    transition: .2s;
 }
+.connected li:hover a i,.connected li:hover a img {
+    transform: translateY(-4px);
+} 
+
 footer {
     background: #f27321;
     height: 40px;
@@ -1035,6 +1071,9 @@ footer p {
     .connected-box {
         padding-right: 1.5rem;
     }
+    .connected-review .redstar {
+        right: 24px;
+    }
     .connected-review img {
         width: 90%;
     }
@@ -1046,6 +1085,9 @@ footer p {
     .connected-social h5, .connected-social p, ul.connected li a {
         font-size: 14px;
     }
+    .connected-review .redstar {
+        right: 8px;
+    }
     .connected-box {
         padding-right: .5rem;
     }
@@ -1054,6 +1096,9 @@ footer p {
     }
 }
 @media screen and (max-width: 680px) {
+    .connected-review .redstar {
+        top: 16px;
+    }
     .connected-group {
         flex-direction: column;
     }

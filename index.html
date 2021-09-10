@@ -10,6 +10,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
     <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
 
 </head>
@@ -25,11 +30,11 @@
                 <div class="menu-btn" onclick="openNavMenu()"><i class="fas fa-th"></i></div>
                 <ul class="menu" id="showmenu">
                     <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
-                    <li><a href="">รู้จักพลีน</a></li>
-                    <li><a href="">ผลิตภัณฑ์พลีน</a></li>
-                    <li><a href="">ทานอย่างไรให้เห็นผล</a></li>
-                    <li><a href="">รีวิว</a></li>
-                    <li><a href="">ติดต่อสั่งซื้อ</a></li>
+                    <li><a data-scroll class="nav-link" href="#plean-toknow" data-scroll class="nav-link">รู้จักพลีน</a></li>
+                    <li><a data-scroll class="nav-link" href="#plean-product" data-scroll class="nav-link">ผลิตภัณฑ์พลีน</a></li>
+                    <li><a data-scroll class="nav-link" href="#plean-ingredient" data-scroll class="nav-link">ทานอย่างไรให้เห็นผล</a></li>
+                    <li><a data-scroll class="nav-link" href="#plean-connected" data-scroll class="nav-link">รีวิว</a></li>
+                    <li><a data-scroll class="nav-link" href="#plean-connected" data-scroll class="nav-link">ติดต่อสั่งซื้อ</a></li>
                 </ul>
             </div>
         </div>
@@ -43,16 +48,17 @@
 
     <!-- end header-banner -->
 
-    <section class="content">
+    <section class="content"id="plean-toknow">
         <div class="container">
-            <div class="plean-title">
+            <div class="plean-title" >
                 <h1>P.Lean</h1>
                 <p>เพิ่มหุ่นลีน แบบสุขภาพดี</p>
                 <img src="./asset/index-pic/prop-1.png" alt="">
-            </div>
-            <div class="plean-toknow-box">
                 <img class="prop-2" src="./asset/index-pic/prop-2.png" alt="">
-                <div class="plean-toknow-left" data-aos="fade-right" data-aos-duration="1500">
+                <img class="prop-3" src="./asset/index-pic/prop-3.png" alt="">
+            </div>
+            <div class="plean-toknow-box" data-aos="fade-right" data-aos-duration="1500">
+                <div class="plean-toknow-left">
                     <h2>ทำความรู้จักพลีน</h2>
                     <br>
                     <p>พลีน ผลิตภัณฑ์เสริมอาหารโปรตีน สกัดจากพืชแท้ๆ เพื่อทดแทนมื้ออาหาร ประโยชน์ครบถ้วน เร่งการเผาพลาญ
@@ -63,7 +69,6 @@
                 <div class="plean-toknow-right">
                     <img src="./asset/index-pic/plean-bottle.png" alt="">
                 </div>
-                <img class="prop-3" src="./asset/index-pic/prop-3.png" alt="">
             </div>
             <div class="plean-content-box">
                 <div class="plean-content-flex">
@@ -120,7 +125,7 @@
 
     <!-- end content -->
 
-    <section class="product">
+    <section class="product" id="plean-product">
         <div class="container">
             <img class="prop-product-top" src="./asset/index-pic/prop-product1.png" alt="">
             <div class="product-title">
@@ -133,43 +138,51 @@
             </div>
             <div class="product-grid">
                 <div class="product-box">
-                    <img src="./asset/index-pic/product-plean1.png" alt="">
+                    <div class="product-below">
+                        <a href=""><img src="./asset/index-pic/product-plean1.png" alt=""></a>
+                    </div>
                     <div class="product-text">
                         <br>
-                        <h4>Lean Burning Cal</h4>
-                        <p>รส Cocoa</p>
+                        <a href=""><h4>Lean Burning Cal</h4></a>
+                        <a href=""><p>รส Cocoa</p></a>
                         <br>
-                        <span>250 บาท</span>
+                        <a href=""><span>250 บาท</span></a>
                     </div>
                 </div>
                 <div class="product-box">
-                    <img src="./asset/index-pic/product-plean2.png" alt="">
+                    <div class="product-below">
+                        <a href=""><img src="./asset/index-pic/product-plean1.png" alt=""></a>
+                    </div>
                     <div class="product-text">
                         <br>
-                        <h4>Lean Glowing Skin</h4>
-                        <p>รส Matcha Berry</p>
+                        <a href=""><h4>Lean Burning Cal</h4></a>
+                        <a href=""><p>รส Cocoa</p></a>
                         <br>
-                        <span>250 บาท</span>
+                        <a href=""><span>250 บาท</span></a>
                     </div>
                 </div>
                 <div class="product-box">
-                    <img src="./asset/index-pic/product-plean2.png" alt="">
+                    <div class="product-below">
+                        <a href=""><img src="./asset/index-pic/product-plean1.png" alt=""></a>
+                    </div>
                     <div class="product-text">
                         <br>
-                        <h4>Lean Glowing Skin</h4>
-                        <p>รส Matcha Berry</p>
+                        <a href=""><h4>Lean Burning Cal</h4></a>
+                        <a href=""><p>รส Cocoa</p></a>
                         <br>
-                        <span>250 บาท</span>
+                        <a href=""><span>250 บาท</span></a>
                     </div>
                 </div>
                 <div class="product-box">
-                    <img src="./asset/index-pic/product-plean2.png" alt="">
+                    <div class="product-below">
+                        <a href=""><img src="./asset/index-pic/product-plean1.png" alt=""></a>
+                    </div>
                     <div class="product-text">
                         <br>
-                        <h4>Lean Glowing Skin</h4>
-                        <p>รส Matcha Berry</p>
+                        <a href=""><h4>Lean Burning Cal</h4></a>
+                        <a href=""><p>รส Cocoa</p></a>
                         <br>
-                        <span>250 บาท</span>
+                        <a href=""><span>250 บาท</span></a>
                     </div>
                 </div>
                 <img class="prop-product-bottom" src="./asset/index-pic/prop-product2.png" alt="">
@@ -221,7 +234,7 @@
 
     <!-- end benefits -->
 
-    <section class="ingredient">
+    <section class="ingredient" id="plean-ingredient">
         <div class="ingredient-box-left">
             <div class="ingredient-left">
                 <div class="continer">
@@ -255,15 +268,16 @@
 
     <!-- end ingredient -->
 
-    <section class="connected">
+    <section class="connected" id="plean-connected">
         <div class="title">
             <h1>STAY CONNECTED</h1>
         </div>
         <div class="connected-group">
             <div class="connected-box">
                 <div class="connected-review">
-                    <a href=""><img src="./asset/index-pic/plean-connected.png" alt=""></a>
-                    <a href="">อ่านรีวิวจากผู้ทานจริง</a>
+                    <a href=""><img class = "nonstar" src="./asset/index-pic/plean-connected-edit.png" alt=""></a>
+                    <a class = "btn" href="">อ่านรีวิวจากผู้ทานจริง</a>
+                    <a href=""><img class ="redstar" src="./asset/index-pic/plean-connected.png" alt=""></a>
                 </div>
             </div>
 
@@ -313,6 +327,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]', {
+            header: '[data-scroll-header]',
+            speed: 500,
+            speedAsDuration: true
+        });
     </script>
 
     <script src="./js/index.js"></script>

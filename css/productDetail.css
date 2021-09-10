@@ -257,6 +257,10 @@ div.bg-logo img{
 .productdetail-buy a img {
     margin-left: 1rem;
     width: 28px;
+    transition: .2s;
+}
+.productdetail-buy li a img:hover {
+    transform: translateY(-4px);
 }
 
 .position-box-bottom {
@@ -315,6 +319,7 @@ section.reviewer .title img {
 }
 .reviewer-box {
     padding-right: 3rem;
+    position: relative;
 }
 .reviewer-review {
     display: flex;
@@ -323,6 +328,22 @@ section.reviewer .title img {
 }
 .reviewer-review a img {
     width: 345px;
+    transition: .5s;
+}
+.reviewer-review:hover .redstar {
+    opacity: 0;
+}
+.reviewer-review:hover .btn {
+    transition: .3s;
+    background: transparent;
+    border: 1px solid #74411b;
+    color: #74411b;
+}
+.reviewer-review .redstar {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 48px;
 }
 .reviewer-review a:nth-child(2) {
     background: #f27321;
@@ -430,6 +451,9 @@ footer p {
         width: 100%;
         position: relative;
         left: 27px;
+    }
+    .reviewer-review .redstar {
+        top: 17px;
     }
     .reviewer-review a:nth-child(2) {
         left: 0;
