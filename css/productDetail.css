@@ -541,7 +541,7 @@ footer p {
   position: absolute;
   bottom: 9px;
   right: 35px;
-  z-index: 100;
+  z-index: 5;
 }
 .text-top-btn p {
   position: absolute;

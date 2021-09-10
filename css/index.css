@@ -303,7 +303,22 @@ section.content {
   font-size: 16px;
   color: #74411b;
 }
-
+@media screen and (max-width: 1920px) {
+  .plean-youtube .prop-left {
+    left: 320px;
+  }
+  .plean-youtube .prop-right {
+    right: 400px;
+  }
+}
+@media screen and (max-width: 1740px) {
+  .plean-youtube .prop-left {
+    left: 235px;
+  }
+  .plean-youtube .prop-right {
+    right: 265px;
+  }
+}
 @media screen and (max-width: 1480px) {
   .plean-youtube .prop-left {
     left: 115px;
@@ -314,10 +329,10 @@ section.content {
 }
 @media screen and (max-width: 1320px) {
   .plean-youtube .prop-left {
-    left: 45px;
+    left: 74px;
   }
   .plean-youtube .prop-right {
-    right: 25px;
+    right: 47px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -337,6 +352,9 @@ section.content {
   }
 }
 @media screen and (max-width: 850px) {
+  .plean-youtube-box {
+    padding: 1rem;
+  }
   .plean-youtube .prop-left {
     left: -25px;
   }
@@ -1171,7 +1189,7 @@ footer p {
   position: absolute;
   bottom: 9px;
   right: 35px;
-  z-index: 100;
+  z-index: 5;
 }
 .text-top-btn p {
   position: absolute;
