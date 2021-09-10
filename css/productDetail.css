@@ -167,19 +167,17 @@ div.bg-logo img{
     padding: 2rem;
     width: 100%;
 }
-.productdetail-left-show .back-btn {
+.productdetail-left-show .back-btn, .productdetail-left-show .forward-btn {
     position: relative;
-    font-size: 30px;
-    left: 30px;
+    font-size: 35px;
     transform: translateX(50%);
     transform: translatey(50%);
 }
+.productdetail-left-show .back-btn {
+    left: 30px;
+}
 .productdetail-left-show .forward-btn {
-    position: relative;
-    font-size: 30px;
     left: -30px;
-    transform: translateX(50%);
-    transform: translatey(50%);
 }
 .productdetail-left-select {
     display: grid;
@@ -287,7 +285,7 @@ div.bg-logo img{
     }
 }
 
-/***************** reviewer *****************/
+/***************** reviewer & footer *****************/
 
 section.reviewer {
     padding: 3rem 1rem 4rem 1rem;
@@ -329,7 +327,6 @@ section.reviewer .title img {
 .reviewer-review a:nth-child(2) {
     background: #f27321;
     margin-top: 1rem;
-    display: inline-block;
     width: 200px;
     text-align: center;
     padding: .5rem 1rem;
@@ -440,11 +437,18 @@ footer p {
     .plean-social {
         padding-top: 2rem;
     }
+    .plean-youtube-box iframe {
+        width: 535px;
+        height: 370px;
+    }
 }
 @media screen and (max-width: 600px) {
     .plean-youtube-box iframe {
-        width: 100%;
+        width: 375px;
         height: 400px;
+    }
+    .plean-youtube-box img {
+        right: -5px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -453,7 +457,8 @@ footer p {
         width: 210px;
     }
     .plean-youtube-box iframe {
-        height: 300px;
+        width: 100%;
+        height: 250px;
     }
 }
 @media screen and (max-width: 321px) {
@@ -479,4 +484,85 @@ footer p {
         font-size: 9px;
     }
 }
+
+/***************** toprounded-btn animated *****************/
+
+.toprounded-btn {
+    position: relative;
+    height: 20px;
+    background-color: #faf1e1;
+}
+.arrow-top-btn, .text-top-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f1e0c2;
+    cursor: pointer;
+}
+.text-top-btn {
+    position: absolute;
+    bottom: 9px;
+    right: 35px;
+    z-index: 100;
+}
+.text-top-btn p {
+    position: absolute;
+    top: 13.5px;
+    right: 9px;
+    font-weight: 500;
+    color: #f27321;
+}
+.arrow-top-btn {
+    position: fixed;
+    bottom: 109px;
+    right: 35px;
+    z-index: 100;
+}
+.arrow-top-btn i {
+    position: fixed;
+    bottom: 110px;
+    right: 49px;
+    font-size: 35px;
+    color: #f27321;
+    z-index: 101;
+}
+
+@keyframes anime{
+    0%{transform:scale(0.95); opacity:1}
+    90%{opacity:.1}to{transform:scale(1.3, 1.3); opacity:0}
+    }
+.arrow-top-btn {
+    transition: .2s;
+}
+.arrow-top-btn:before, .arrow-top-btn:after {
+    content: "";
+    position: absolute;
+    /* z-index: -10; */
+    top: -3px;
+    left: -3px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #f7d091;
+    transform: translate3d(0,0,0);
+  }
+  .arrow-top-btn:before {
+    animation: anime 2s ease-out infinite;
+  } 
+   .arrow-top-btn:after {
+   animation: anime 2s ease-in-out 1s infinite;
+  }
+  .arrow-top-btn {
+    border-radius: 50%;
+    background: #f1e0c2;
+  }
+    
+
+@media screen and (max-width: 680px) {
+    .toprounded-btn {
+        height: 0;
+    }
+}
+
+
 

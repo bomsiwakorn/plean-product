@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plean</title>
-    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+
+    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -48,7 +52,7 @@
             </div>
             <div class="plean-toknow-box">
                 <img class="prop-2" src="./asset/index-pic/prop-2.png" alt="">
-                <div class="plean-toknow-left">
+                <div class="plean-toknow-left" data-aos="fade-right" data-aos-duration="1500">
                     <h2>ทำความรู้จักพลีน</h2>
                     <br>
                     <p>พลีน ผลิตภัณฑ์เสริมอาหารโปรตีน สกัดจากพืชแท้ๆ เพื่อทดแทนมื้ออาหาร ประโยชน์ครบถ้วน เร่งการเผาพลาญ
@@ -282,7 +286,7 @@
                     <ul class="connected">
                         <li><a href=""><i class="fab fa-instagram"></i> p.lean_protein.th</a></li>
                         <li><a href=""><i class="fab fa-line"></i> @Plean</a></li>
-                        <li><a href=""><i><img src="./asset/index-pic/shopee.png" alt=""></i> p.lean_protein.th</a></li>
+                        <li><a href=""><i><img src="./asset/index-pic/shopee.svg" alt=""></i> p.lean_protein.th</a></li>
                     </ul>
                 </div>
             </div>
@@ -291,9 +295,25 @@
 
     <!-- end connected -->
 
+    <div class="toprounded-btn">
+        <a href="" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
+        <a href="" class="text-top-btn">
+            <p>TOP</p>
+        </a>
+    </div>
+
+    <!-- end toprounded-btn -->
+
     <footer>
         <p>ลิขสิทธิ์ 2564 โดย หจก. เมนเทรด อินเตอร์เนชั่นแนล. | Belong-To</p>
     </footer>
+
+    <!-- end footer -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="./js/index.js"></script>
 </body>
