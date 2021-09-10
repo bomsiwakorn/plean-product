@@ -4,6 +4,7 @@ const showMenu = document.getElementById('showmenu');
 
 function openNavMenu() {
   showMenu.classList.add('togglemenu');
+  document.querySelector('body').style.overflow = 'hidden';
 }
 
 function closeNavMenu() {

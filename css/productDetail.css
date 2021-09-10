@@ -7,10 +7,15 @@
   font-family: 'Prompt', sans-serif;
 }
 html {
+  overflow-x: hidden !important;
   scroll-behavior: smooth !important;
+  max-width: 100%;
 }
 body {
+  overflow-x: hidden !important;
+  max-width: 100%;
   scroll-behavior: smooth !important;
+  position: relative;
 }
 .container {
   max-width: 1600px;
@@ -86,14 +91,14 @@ ul.menu li a {
   ul.menu {
     background: #e89b5d;
     position: fixed;
-    top: 42px;
+    top: 0;
     right: -1000px;
     flex-direction: column;
     width: 310px;
-    height: 80vh;
+    bottom: 0;
     padding: 2rem 0;
     margin: 0;
-    z-index: 1000;
+    z-index: 10000000;
     text-align: center;
     cursor: pointer;
     transition: 0.8s;
@@ -549,7 +554,7 @@ footer p {
   position: fixed;
   bottom: 109px;
   right: 35px;
-  z-index: 100;
+  z-index: 50;
 }
 .arrow-top-btn i {
   position: fixed;
