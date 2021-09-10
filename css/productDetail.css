@@ -621,6 +621,7 @@ footer p {
 .swiper-slide img {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 .swiper {
   width: 100%;

@@ -16,10 +16,10 @@ function closeNavMenu() {
 function showGalleryModal(index) {
   const galleryModal = document.querySelector('.gallery-plean-modal');
   const bgModal = document.querySelector('.bg-gallery-modal');
-  const body = document.querySelector('body');
+  const html = document.querySelector('html');
   galleryModal.classList.toggle('gallery-plean-modal-show');
   bgModal.classList.toggle('bg-gallery-modal-show');
-  body.classList.toggle('body-gallery-modal-show');
+  html.classList.toggle('html-gallery-modal-show');
 
   const swiper = new Swiper('.mySwiper', {
     spaceBetween: 10,

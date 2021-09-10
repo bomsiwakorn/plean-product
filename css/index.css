@@ -893,6 +893,7 @@ section.ingredient {
 }
 .ingredient-right-img img {
   width: 400px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1230px) {
   .ingredient-left-title {
@@ -1251,6 +1252,7 @@ footer p {
 .swiper-slide img {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 .swiper {
   width: 100%;
@@ -1330,6 +1332,6 @@ footer p {
 .bg-gallery-modal-show {
   display: block;
 }
-.body-gallery-modal-show {
-  overflow: hidden;
+.html-gallery-modal-show {
+  overflow: hidden !important;
 }
