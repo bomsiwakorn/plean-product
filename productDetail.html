@@ -15,6 +15,21 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+          $("#tabs").tabs();
+      });
+  </script>
   </head>
 
   <body>
@@ -27,18 +42,13 @@
                 <div class="menu-btn" onclick="openNavMenu()"><i class="fas fa-th"></i></div>
                 <ul class="menu" id="showmenu">
                     <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
-                    <li><a data-scroll class="nav-link" href="#plean-toknow" data-scroll class="nav-link">รู้จักพลีน</a></li>
-                    <li><a data-scroll class="nav-link" href="#plean-product" data-scroll class="nav-link">ผลิตภัณฑ์พลีน</a></li>
-                    <li><a data-scroll class="nav-link" href="#plean-ingredient" data-scroll class="nav-link">ทานอย่างไรให้เห็นผล</a></li>
-                    <li><a data-scroll class="nav-link" href="#plean-connected" data-scroll class="nav-link">รีวิว</a></li>
-                    <li><a data-scroll class="nav-link" href="#plean-connected" data-scroll class="nav-link">ติดต่อสั่งซื้อ</a></li>
+                    <li><a data-scroll class="nav-link" href="/#plean-toknow" aria-current="page">รู้จักพลีน</a></li>
+                    <li><a data-scroll class="nav-link" href="/#plean-product">ผลิตภัณฑ์พลีน</a></li>
+                    <li><a data-scroll class="nav-link" href="/#plean-ingredient">ทานอย่างไรให้เห็นผล</a></li>
+                    <li><a data-scroll class="nav-link" href="/#plean-connected">รีวิว</a></li>
+                    <li><a data-scroll class="nav-link" href="/#plean-connected">ติดต่อสั่งซื้อ</a></li>
                 </ul>
             </div>
-            <li><a href="">รู้จักพลีน</a></li>
-            <li><a href="">ผลิตภัณฑ์พลีน</a></li>
-            <li><a href="">ทานอย่างไรให้เห็นผล</a></li>
-            <li><a href="">รีวิว</a></li>
-            <li><a href="">ติดต่อสั่งซื้อ</a></li>
           </ul>
         </div>
       </div>
@@ -254,19 +264,6 @@
     <!-- end productdetail -->
 
     <section class="reviewer">
-      <div class="title">
-        <h1>รีวิวจากผู้ทานจริง</h1>
-        <img src="./asset/productDetail-pic/prop-1.png" alt="" />
-      </div>
-      <div class="reviewer-group">
-        <div class="reviewer-box">
-          <div class="reviewer-review">
-            <a href=""
-              ><img src="./asset/index-pic/plean-connected.png" alt=""
-            /></a>
-            <a href="">อ่านรีวิวจากผู้ทานจริง</a>
-          </div>
-        </div>
         <div class="reviewer-group">
             <div class="reviewer-box">
                 <div class="reviewer-review">
@@ -284,14 +281,13 @@
                 </div>
             </div>
         </div>
-      </div>
     </section>
 
     <!-- end reviewer -->
 
     <div class="toprounded-btn">
-      <a href="" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
-      <a href="" class="text-top-btn"><p>TOP</p></a>
+      <a data-scroll href="#" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
+      <a data-scroll href="#" class="text-top-btn"><p>TOP</p></a>
     </div>
 
     <!-- end toprounded-btn -->
@@ -304,6 +300,13 @@
 
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- <script>
+      const scroll = new SmoothScroll('a[href*="#"]', {
+          header: '[data-scroll-header]',
+          speed: 500,
+          speedAsDuration: true
+      });
+  </script> -->
     <script>
       const swiper = new Swiper('.mySwiper', {
         spaceBetween: 10,

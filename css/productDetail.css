@@ -6,6 +6,12 @@
   margin: 0;
   font-family: 'Prompt', sans-serif;
 }
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  scroll-behavior: smooth !important;
+}
 .container {
   max-width: 1600px;
   width: 97%;
