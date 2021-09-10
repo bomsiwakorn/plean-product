@@ -911,6 +911,7 @@ section.ingredient {
 }
 .ingredient-right-img img {
   width: 400px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1230px) {
   .ingredient-left-title {
@@ -1269,6 +1270,7 @@ footer p {
 .swiper-slide img {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 .swiper {
   width: 100%;
@@ -1311,6 +1313,16 @@ footer p {
   display: none;
   transition: 0.5s;
 }
+@media screen and (max-width: 815px) {
+  .gallery-plean-modal {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery-plean-modal {
+    width: 92%;
+  }
+}
 .close-gallery-modal {
   position: fixed;
   top: 0px;
@@ -1338,6 +1350,6 @@ footer p {
 .bg-gallery-modal-show {
   display: block;
 }
-.body-gallery-modal-show {
-  overflow: hidden;
+.html-gallery-modal-show {
+  overflow: hidden !important;
 }
