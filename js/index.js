@@ -9,6 +9,7 @@ function openNavMenu() {
 
 function closeNavMenu() {
   showMenu.classList.remove('togglemenu');
+  document.querySelector('html').style.overflow = 'auto';
 }
 
 // active select product
