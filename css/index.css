@@ -1293,6 +1293,16 @@ footer p {
   display: none;
   transition: 0.5s;
 }
+@media screen and (max-width: 815px) {
+  .gallery-plean-modal {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery-plean-modal {
+    width: 92%;
+  }
+}
 .close-gallery-modal {
   position: fixed;
   top: 0px;
