@@ -24,7 +24,6 @@ body {
   width: 97%;
   margin: 0 auto;
 }
-
 /***************** nav *****************/
 nav {
   width: 100%;
@@ -104,7 +103,7 @@ ul.menu li a {
   ul.menu .menu-times {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 20px;
   }
   ul.menu {
     background: #e89b5d;
@@ -133,6 +132,11 @@ ul.menu li a {
   }
   ul.menu.togglemenu {
     right: 0;
+  }
+  .fa-times-thin:before {
+    content: '\00d7';
+    color: #74411b;
+    font-size: 50px;
   }
 }
 
@@ -246,13 +250,31 @@ section.content {
   padding: 1rem;
   width: 440px;
 }
+.plean-content-left img {
+  transition: .3s;
+}
+.plean-content-left img:hover {
+  transform: translateY(-10px);
+}
 .plean-content-center {
   padding: 1rem;
   width: 440px;
 }
+.plean-content-center img {
+  transition: .3s;
+}
+.plean-content-center img:hover {
+  transform: translateY(-10px);
+}
 .plean-content-right {
   padding: 1rem;
   width: 440px;
+}
+.plean-content-right img {
+  transition: .3s;
+}
+.plean-content-right img:hover {
+  transform: translateY(-10px);
 }
 .plean-content-text {
   text-align: center;
@@ -307,10 +329,14 @@ section.content {
   margin-bottom: 6rem;
   padding: 1rem;
 }
-.plean-award img {
-  width: 255px;
+.plean-award-img {
+  width: 365px;
+}
+.plean-award-img img {
+  width: 100%;
   padding-right: 2rem;
 }
+
 .plean-award-text {
   width: 360px;
 }
@@ -402,6 +428,25 @@ section.content {
     width: 100%;
   }
 }
+@media screen and (max-width: 625px) {
+  .plean-award {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+  .plean-award-text {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .plean-award-img img {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 600px) {
   .plean-youtube {
     margin-top: 3rem;
@@ -441,33 +486,7 @@ section.content {
   .plean-content-right {
     width: 100%;
   }
-  .plean-award {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
-    padding: 2rem;
-  }
-  .plean-award-text {
-    width: 100%;
-  }
-  .plean-award img {
-    grid-row: 2 / 3;
-    width: 100%;
-    padding: 2.5rem;
-    align-items: center;
-    justify-content: center;
-  }
-  .plean-award div {
-    grid-row: 1 / 2;
-  }
-  .plean-award-text h3 {
-    font-size: 23px;
-  }
-  .plean-award-text p {
-    font-size: 15px;
-  }
+  
 }
 @media screen and (max-width: 480px) {
   .plean-toknow-left {
@@ -505,6 +524,9 @@ section.content {
     width: 150px;
     right: -5px;
     top: 55px;
+  }
+  .plean-award-img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 321px) {
