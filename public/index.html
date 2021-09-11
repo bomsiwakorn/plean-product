@@ -1,478 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plean</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plean</title>
 
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
 
-    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <script
-      src="https://kit.fontawesome.com/cf2146b72f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    
-  </head>
+  <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
 
-  <body>
-    <nav>
+  <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <li><a href="#"><img src="./asset/index-pic/logo.png" alt=""></a></li>
+        </div>
+        <div class="menu-btn" onclick="openNavMenu()">
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+        </div>
+        <ul class="menu" id="showmenu">
+          <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-toknow">รู้จักพลีน</a></li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-product">ผลิตภัณฑ์พลีน</a></li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-ingredient">ทานอย่างไรให้เห็นผล</a>
+          </li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-connected">รีวิว</a></li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-connected">ติดต่อสั่งซื้อ</a></li>
+        </ul>
+      </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- end nav -->
+
+  <section class="header-banner">
+    <img src="./asset/index-pic/banner1.png" alt="" />
+  </section>
+
+  <!-- end header-banner -->
+
+  <section class="content" id="plean-toknow">
+    <div class="container">
+      <div class="plean-title">
+        <h1>P.Lean</h1>
+        <p>เพิ่มหุ่นลีน แบบสุขภาพดี</p>
+        <img src="./asset/index-pic/prop-1.png" alt="">
+        <img class="prop-2" src="./asset/index-pic/prop-2.png" alt="">
+        <img class="prop-3" src="./asset/index-pic/prop-3.png" alt="">
+      </div>
+      <div class="plean-toknow-box" data-aos="fade-right" data-aos-duration="1500">
+        <div class="plean-toknow-left">
+          <h2>ทำความรู้จักพลีน</h2>
+          <br>
+          <p>พลีน ผลิตภัณฑ์เสริมอาหารโปรตีน สกัดจากพืชแท้ๆ เพื่อทดแทนมื้ออาหาร ประโยชน์ครบถ้วน เร่งการเผาพลาญ
+            ใส่ใจทุกขั้นตอนการผลิต รับรอง มาตรฐาน และความปลอดภัย มั่นใจทุกครั้งที่ทาน ด้วยสารสกัด
+            ธรรมชาติมากกว่า 23 ชนิด และให้ โปรตีนทั้งหมด 21 กรัมต่อซอง ง่าย ๆ ไม่ยุ่งยาก
+            แค่ชงผสมน้ำแล้วเขย่า อร่อยเข้มข้น</p>
+        </div>
+        <div class="plean-toknow-right">
+          <img src="./asset/index-pic/plean-bottle.png" alt="">
+        </div>
+      </div>
+      <div class="plean-content-box">
+        <div class="plean-content-flex">
+          <div class="plean-content-left">
+            <img src="./asset/index-pic/plean-content1.png" alt="">
+            <div class="plean-content-text">
+              <h4>P.Lean Plant - based Protein <br> (All in One)</h4>
+              <p>พลีน โปรตีนเข้มข้นจากพืชแท้ๆ ใช้ทดแทนมื้ออาหาร
+                ช่วยควบคุมน้ำหนักและดูแลรูปร่างแบบคนรักสุขภาพ</p>
+            </div>
+          </div>
+          <div class="plean-content-center">
+            <img src="./asset/index-pic/plean-content2.png" alt="">
+            <div class="plean-content-text">
+              <h4>1 ซอง แค่ 140 kcal </h4>
+              <p>ด้วยสารสกัดคุณภาพสูง นำเข้าจากยุโรปและอเมริกา
+                คัดสรรมาอย่างดีโดยเภสัชกรผู้เชี่ยวชาญด้านสุขภาพ สะอาด ปลอดภัย มั่นใจทุกครั้งที่ดื่ม</p>
+            </div>
+          </div>
+          <div class="plean-content-right">
+            <img src="./asset/index-pic/plean-content3.png" alt="">
+            <div class="plean-content-text">
+              <h4>พลีน ควบคุมคุณภาพโดยผู้เชี่ยวชาญ</h4>
+              <p>โรงงานผลิตที่ได้มาตรฐานระดับโลก GMP Codex, HACCP และ ISO 22000:20
+                รวมถึงได้รับการรับรองจาก อย. แล้ว</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="plean-youtube">
+      <img class="prop-left" src="./asset/index-pic/prop-youtube-left.png" alt="" />
+      <div class="plean-youtube-box">
+        <iframe src="https://www.youtube.com/embed/XbsJSQEQ1bY" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <img class="prop-right" src="./asset/index-pic/prop-youtube-right.png" alt="" />
+    </div>
+    <div class="plean-award">
+      <img src="./asset/index-pic/plean-award.png" alt="" />
+      <div class="plean-award-text">
+        <h3>
+          การันตีคุณภาพ ด้วยรางวัล <br />
+          ผลิตภัณฑ์ดีเด่น ปี 2021
+        </h3>
+        <br />
+        <p>
+          ผลิตภัณฑ์ P.Lean protein ของเรา
+          เป็นโปรตีนแบรนด์เดียวที่ได้รับรางวัล <br />
+          “ผลิตภัณฑ์ดีเด่น ปี 2021“
+        </p>
+        <br />
+        <p>
+          ทางเรารู้สึกเป็นเกียรติและภูมิใจอย่างมาก <br />
+          ที่พาแบรนด์เดินมาถึงจุดนี้ และจะพัฒนาคุณภาพสินค้า <br />
+          และบริการให้ดียิ่งๆ ขึ้นไป
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- end content -->
+
+  <section class="product" id="plean-product">
+    <div class="container">
+      <img class="prop-product-top" src="./asset/index-pic/prop-product1.png" alt="">
+      <div class="product-title">
+        <h1>ผลิตภัณฑ์พลีน</h1>
+        <p>โปรตีนพรีเมียมเข้มข้นจากพลีน</p>
+        <br>
+        <p class="long-text">P.Lean โปรตีนที่ผ่านกระบวนการแยกเปลือกและดึงเอาไขมันออก กลายเป็น Isolated Protein
+          มีความบริสุทธิ์สูงถึง 90% เป็นโปรตีนพรีเมี่ยมเข้มข้น ทำให้ร่างกายดูดซึมได้ดีกว่าโปรตีนทั่วไป มากถึง
+          10 เท่า</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-box">
+          <a href="/productDetail.html">
+            <div class="product-below">
+              <img src="./asset/index-pic/product-plean1.png" alt="">
+            </div>
+            <div class="product-text">
+              <br>
+              <h4>Lean Burning Cal</h4>
+              <p>รส Matcha Berry</p>
+              <br>
+              <span>250 บาท</span>
+            </div>
+          </a>
+        </div>
+        <div class="product-box">
+          <a href="/productDetail.html">
+            <div class="product-below">
+              <img src="./asset/index-pic/product-plean2.png" alt="">
+            </div>
+            <div class="product-text">
+              <br>
+              <h4>Lean Burning Cal</h4>
+              <p>รส Cocoa</p>
+              <br>
+              <span>250 บาท</span>
+            </div>
+          </a>
+        </div>
+        <div class="product-box">
+          <a href="/productDetail.html">
+            <div class="product-below">
+              <img src="./asset/index-pic/product-plean1.png" alt="">
+            </div>
+            <div class="product-text">
+              <br>
+              <h4>Lean Burning Cal</h4>
+              <p>รส Matcha Berry</p>
+              <br>
+              <span>250 บาท</span>
+            </div>
+          </a>
+        </div>
+        <div class="product-box">
+          <a href="/productDetail.html">
+            <div class="product-below">
+              <img src="./asset/index-pic/product-plean2.png" alt="">
+            </div>
+            <div class="product-text">
+              <br>
+              <h4>Lean Burning Cal</h4>
+              <p>รส Cocoa</p>
+              <br>
+              <span>250 บาท</span>
+            </div>
+          </a>
+        </div>
+
+        <img class="prop-product-bottom" src="./asset/index-pic/prop-product2.png" alt="">
+      </div>
+    </div>
+    <img class="prop-product-bottom" src="./asset/index-pic/prop-product2.png" alt="" />
+    </div>
+    </div>
+  </section>
+
+  <!-- end product -->
+
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits-title">
+        <h1>P.lean ช่วยเรื่องอะไรบ้าง</h1>
+      </div>
+      <div class="benefits-top">
+        <div class="benefits-text-top">
+          <h3>
+            P.Lean อัดแน่นด้วยโปรตีน 21 กรัม สกัดจากถั่วเหลือง ถั่วลันเตา
+            จมูกข้าว และฟักทอง
+          </h3>
+          <br />
+          <li>ช่วยแทนมื้ออาหารได้ อิ่มนาน ลดทานจุบจิบ และมีไฟเบอร์สูง</li>
+          <li>มีกาบา (GABA) จากจมูกข้าว ช่วยในการบำรุงสมอง</li>
+          <li>
+            มี SOD พรีเมี่ยมจากฝรั่งเศส มีคอลลาเจนสูง บำรุงผิวระดับเซลล์
+          </li>
+          <li>
+            มี L-Carnitine และ Creatine ช่วยเผาผลาญ ช่วยให้หุ่นลดลงไวขึ้น
+          </li>
+          <li>
+            มีสาร ต้านอนุมูลอิสระ จาก Super Foods & Super Fruits คืนความสดใส
+          </li>
+          <li>หมดปัญหา สำหรับคนที่แพ้นม ไม่มีแลคโตส ช่วยให้ย่อยง่าย</li>
+          <li>ไม่มีน้ำตาล</li>
+          <li>ไม่มีไขมันทรานส์</li>
+          <li>ไม่มีคลอเรสเตอรอล</li>
+          <li>มี Gluten Free</li>
+        </div>
+        <div class="benefits-img-top">
+          <img src="./asset/index-pic/plean-benefits1.png" alt="" />
+        </div>
+      </div>
+      <div class="benefits-bottom">
+        <img src="./asset/index-pic/plean-benefits2.png" alt="" />
+        <div class="benefits-text-bottom">
+          <h3>
+            มีให้เลือก 2 สูตร 2 รสชาติ ให้คุณเปลี่ยนหุ่น XL เป็น XS
+            ได้แบบที่ใจต้องการ
+          </h3>
+          <br />
+          <li>Lean Burning Cal รส Cocoa สูตรเบิร์นไว ช่วยเร่งการเผาผลาญ</li>
+          <li>
+            Lean Glowing Skin รส Matcha Berry สูตรลีน ความงามผิวจากภายใน
+          </li>
+          <li>คอเลสเตอรอลและไขมัน 0%</li>
+          <li>ให้พลังงานเพียง 140 กิโลแคลลอรี</li>
+          <li>
+            เป็นสูตรไม่ผสมนม และไม่ใส่น้ำตาล ความหวานมาจากซูคราโลส
+            (คนเป็นเบาหวานทานได้)
+          </li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end benefits -->
+
+  <section class="ingredient" id="plean-ingredient">
+    <div class="ingredient-box-left">
+      <div class="ingredient-left">
+        <div class="continer">
+          <div class="ingredient-left-title">
+            <h1>ทานพลีนอย่างไรให้เห็นผล</h1>
+            <br>
+            <p>ดื่มทดแทนมื้ออาหารเย็น ช่วยควบคุมน้ำหนัก คุมหิว อิ่มนาน ลดทานจุกจิก ดื่มหลังออกกำลังกาย
+              ช่วยเสริมสร้างกล้ามเนื้อ </p>
+          </div>
+          <div class="ingredient-left-img">
+            <img src="./asset/index-pic/plean-info3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="ingredient-box-right">
+      <div class="ingredient-right">
         <div class="container">
-            <div class="nav">
-                <div class="logo">
-                    <li><a href="#"><img src="./asset/index-pic/logo.png" alt=""></a></li>
-                </div>
-                <div class="menu-btn" onclick="openNavMenu()">
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                </div>
-                <ul class="menu" id="showmenu">
-                  <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-toknow">รู้จักพลีน</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-product">ผลิตภัณฑ์พลีน</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-ingredient">ทานอย่างไรให้เห็นผล</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-connected">รีวิว</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="#plean-connected">ติดต่อสั่งซื้อ</a></li>
-                </ul>
+          <div class="ingredient-right">
+            <div class="ingredient-right-img" onclick="showGalleryModal(0)">
+              <img src="./asset/index-pic/plean-info1.png" alt="" />
             </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- end nav -->
-
-    <section class="header-banner">
-      <img src="./asset/index-pic/banner1.png" alt="" />
-    </section>
-
-    <!-- end header-banner -->
-
-    <section class="content"id="plean-toknow">
-        <div class="container">
-            <div class="plean-title" >
-                <h1>P.Lean</h1>
-                <p>เพิ่มหุ่นลีน แบบสุขภาพดี</p>
-                <img src="./asset/index-pic/prop-1.png" alt="">
-                <img class="prop-2" src="./asset/index-pic/prop-2.png" alt="">
-                <img class="prop-3" src="./asset/index-pic/prop-3.png" alt="">
-            </div>
-            <div class="plean-toknow-box" data-aos="fade-right" data-aos-duration="1500">
-                <div class="plean-toknow-left">
-                    <h2>ทำความรู้จักพลีน</h2>
-                    <br>
-                    <p>พลีน ผลิตภัณฑ์เสริมอาหารโปรตีน สกัดจากพืชแท้ๆ เพื่อทดแทนมื้ออาหาร ประโยชน์ครบถ้วน เร่งการเผาพลาญ
-                        ใส่ใจทุกขั้นตอนการผลิต รับรอง มาตรฐาน และความปลอดภัย มั่นใจทุกครั้งที่ทาน ด้วยสารสกัด
-                        ธรรมชาติมากกว่า 23 ชนิด และให้ โปรตีนทั้งหมด 21 กรัมต่อซอง ง่าย ๆ ไม่ยุ่งยาก
-                        แค่ชงผสมน้ำแล้วเขย่า อร่อยเข้มข้น</p>
-                </div>
-                <div class="plean-toknow-right">
-                    <img src="./asset/index-pic/plean-bottle.png" alt="">
-                </div>
-            </div>
-            <div class="plean-content-box">
-                <div class="plean-content-flex">
-                    <div class="plean-content-left">
-                        <img src="./asset/index-pic/plean-content1.png" alt="">
-                        <div class="plean-content-text">
-                            <h4>P.Lean Plant - based Protein <br> (All in One)</h4>
-                            <p>พลีน โปรตีนเข้มข้นจากพืชแท้ๆ ใช้ทดแทนมื้ออาหาร
-                                ช่วยควบคุมน้ำหนักและดูแลรูปร่างแบบคนรักสุขภาพ</p>
-                        </div>
-                    </div>
-                    <div class="plean-content-center">
-                        <img src="./asset/index-pic/plean-content2.png" alt="">
-                        <div class="plean-content-text">
-                            <h4>1 ซอง แค่ 140 kcal </h4>
-                            <p>ด้วยสารสกัดคุณภาพสูง นำเข้าจากยุโรปและอเมริกา
-                                คัดสรรมาอย่างดีโดยเภสัชกรผู้เชี่ยวชาญด้านสุขภาพ สะอาด ปลอดภัย มั่นใจทุกครั้งที่ดื่ม</p>
-                        </div>
-                    </div>
-                    <div class="plean-content-right">
-                        <img src="./asset/index-pic/plean-content3.png" alt="">
-                        <div class="plean-content-text">
-                            <h4>พลีน ควบคุมคุณภาพโดยผู้เชี่ยวชาญ</h4>
-                            <p>โรงงานผลิตที่ได้มาตรฐานระดับโลก GMP Codex, HACCP และ ISO 22000:20
-                                รวมถึงได้รับการรับรองจาก อย. แล้ว</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="plean-youtube">
-          <img
-            class="prop-left"
-            src="./asset/index-pic/prop-youtube-left.png"
-            alt=""
-          />
-          <div class="plean-youtube-box">
-            <iframe
-              src="https://www.youtube.com/embed/XbsJSQEQ1bY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <img
-            class="prop-right"
-            src="./asset/index-pic/prop-youtube-right.png"
-            alt=""
-          />
-        </div>
-        <div class="plean-award">
-          <img src="./asset/index-pic/plean-award.png" alt="" />
-          <div class="plean-award-text">
-            <h3>
-              การันตีคุณภาพ ด้วยรางวัล <br />
-              ผลิตภัณฑ์ดีเด่น ปี 2021
-            </h3>
-            <br />
-            <p>
-              ผลิตภัณฑ์ P.Lean protein ของเรา
-              เป็นโปรตีนแบรนด์เดียวที่ได้รับรางวัล <br />
-              “ผลิตภัณฑ์ดีเด่น ปี 2021“
-            </p>
-            <br />
-            <p>
-              ทางเรารู้สึกเป็นเกียรติและภูมิใจอย่างมาก <br />
-              ที่พาแบรนด์เดินมาถึงจุดนี้ และจะพัฒนาคุณภาพสินค้า <br />
-              และบริการให้ดียิ่งๆ ขึ้นไป
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end content -->
-
-    <section class="product" id="plean-product">
-        <div class="container">
-            <img class="prop-product-top" src="./asset/index-pic/prop-product1.png" alt="">
-            <div class="product-title">
-                <h1>ผลิตภัณฑ์พลีน</h1>
-                <p>โปรตีนพรีเมียมเข้มข้นจากพลีน</p>
-                <br>
-                <p class="long-text">P.Lean โปรตีนที่ผ่านกระบวนการแยกเปลือกและดึงเอาไขมันออก กลายเป็น Isolated Protein
-                    มีความบริสุทธิ์สูงถึง 90% เป็นโปรตีนพรีเมี่ยมเข้มข้น ทำให้ร่างกายดูดซึมได้ดีกว่าโปรตีนทั่วไป มากถึง
-                    10 เท่า</p>
-            </div>
-            <div class="product-grid">
-              <div class="product-box">
-                <a href="/productDetail.html">
-                <div class="product-below">
-                    <img src="./asset/index-pic/product-plean1.png" alt="">
-                </div>
-                <div class="product-text">
-                    <br>
-                    <h4>Lean Burning Cal</h4>
-                    <p>รส Matcha Berry</p>
-                    <br>
-                    <span>250 บาท</span>
-                </div>
-              </a>
-            </div>
-              <div class="product-box">
-                <a href="/productDetail.html">
-                <div class="product-below">
-                    <img src="./asset/index-pic/product-plean2.png" alt="">
-                </div>
-                <div class="product-text">
-                    <br>
-                    <h4>Lean Burning Cal</h4>
-                    <p>รส Cocoa</p>
-                    <br>
-                    <span>250 บาท</span>
-                </div>
-              </a>
-            </div>
-              <div class="product-box">
-                <a href="/productDetail.html">
-                <div class="product-below">
-                    <img src="./asset/index-pic/product-plean1.png" alt="">
-                </div>
-                <div class="product-text">
-                    <br>
-                    <h4>Lean Burning Cal</h4>
-                    <p>รส Matcha Berry</p>
-                    <br>
-                    <span>250 บาท</span>
-                </div>
-              </a>
-            </div>
-              <div class="product-box">
-                <a href="/productDetail.html">
-                <div class="product-below">
-                    <img src="./asset/index-pic/product-plean2.png" alt="">
-                </div>
-                <div class="product-text">
-                    <br>
-                    <h4>Lean Burning Cal</h4>
-                    <p>รส Cocoa</p>
-                    <br>
-                    <span>250 บาท</span>
-                </div>
-              </a>
-            </div>
-                
-                <img class="prop-product-bottom" src="./asset/index-pic/prop-product2.png" alt="">
-            </div>
-          </div>
-          <img
-            class="prop-product-bottom"
-            src="./asset/index-pic/prop-product2.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- end product -->
-
-    <section class="benefits">
-      <div class="container">
-        <div class="benefits-title">
-          <h1>P.lean ช่วยเรื่องอะไรบ้าง</h1>
-        </div>
-        <div class="benefits-top">
-          <div class="benefits-text-top">
-            <h3>
-              P.Lean อัดแน่นด้วยโปรตีน 21 กรัม สกัดจากถั่วเหลือง ถั่วลันเตา
-              จมูกข้าว และฟักทอง
-            </h3>
-            <br />
-            <li>ช่วยแทนมื้ออาหารได้ อิ่มนาน ลดทานจุบจิบ และมีไฟเบอร์สูง</li>
-            <li>มีกาบา (GABA) จากจมูกข้าว ช่วยในการบำรุงสมอง</li>
-            <li>
-              มี SOD พรีเมี่ยมจากฝรั่งเศส มีคอลลาเจนสูง บำรุงผิวระดับเซลล์
-            </li>
-            <li>
-              มี L-Carnitine และ Creatine ช่วยเผาผลาญ ช่วยให้หุ่นลดลงไวขึ้น
-            </li>
-            <li>
-              มีสาร ต้านอนุมูลอิสระ จาก Super Foods & Super Fruits คืนความสดใส
-            </li>
-            <li>หมดปัญหา สำหรับคนที่แพ้นม ไม่มีแลคโตส ช่วยให้ย่อยง่าย</li>
-            <li>ไม่มีน้ำตาล</li>
-            <li>ไม่มีไขมันทรานส์</li>
-            <li>ไม่มีคลอเรสเตอรอล</li>
-            <li>มี Gluten Free</li>
-          </div>
-          <div class="benefits-img-top">
-            <img src="./asset/index-pic/plean-benefits1.png" alt="" />
-          </div>
-        </div>
-        <div class="benefits-bottom">
-          <img src="./asset/index-pic/plean-benefits2.png" alt="" />
-          <div class="benefits-text-bottom">
-            <h3>
-              มีให้เลือก 2 สูตร 2 รสชาติ ให้คุณเปลี่ยนหุ่น XL เป็น XS
-              ได้แบบที่ใจต้องการ
-            </h3>
-            <br />
-            <li>Lean Burning Cal รส Cocoa สูตรเบิร์นไว ช่วยเร่งการเผาผลาญ</li>
-            <li>
-              Lean Glowing Skin รส Matcha Berry สูตรลีน ความงามผิวจากภายใน
-            </li>
-            <li>คอเลสเตอรอลและไขมัน 0%</li>
-            <li>ให้พลังงานเพียง 140 กิโลแคลลอรี</li>
-            <li>
-              เป็นสูตรไม่ผสมนม และไม่ใส่น้ำตาล ความหวานมาจากซูคราโลส
-              (คนเป็นเบาหวานทานได้)
-            </li>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end benefits -->
-
-    <section class="ingredient" id="plean-ingredient">
-        <div class="ingredient-box-left">
-            <div class="ingredient-left">
-                <div class="continer">
-                    <div class="ingredient-left-title">
-                        <h1>ทานพลีนอย่างไรให้เห็นผล</h1>
-                        <br>
-                        <p>ดื่มทดแทนมื้ออาหารเย็น ช่วยควบคุมน้ำหนัก คุมหิว อิ่มนาน ลดทานจุกจิก ดื่มหลังออกกำลังกาย
-                            ช่วยเสริมสร้างกล้ามเนื้อ </p>
-                    </div>
-                    <div class="ingredient-left-img">
-                        <img src="./asset/index-pic/plean-info3.png" alt="">
-                    </div>
-                </div>
+            <div class="ingredient-right-img" onclick="showGalleryModal(1)">
+              <img src="./asset/index-pic/plean-info2.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="ingredient-box-right">
-        <div class="ingredient-right">
-          <div class="container">
-            <div class="ingredient-right">
-              <div class="ingredient-right-img" onclick="showGalleryModal(0)">
-                <img src="./asset/index-pic/plean-info1.png" alt="" />
-              </div>
-              <div class="ingredient-right-img" onclick="showGalleryModal(1)">
-                <img src="./asset/index-pic/plean-info2.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="bg-gallery-modal" onclick="showGalleryModal()"></div>
-      <div class="gallery-plean-modal">
-        <div class="close-gallery-modal" onclick="showGalleryModal()">
-          <i class="fas fa-times-circle"></i>
-        </div>
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./asset/index-pic/plean-info1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./asset/index-pic/plean-info2.png" />
-            </div>
+  <section>
+    <div class="bg-gallery-modal" onclick="showGalleryModal()"></div>
+    <div class="gallery-plean-modal">
+      <div class="close-gallery-modal" onclick="showGalleryModal()">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./asset/index-pic/plean-info1.png" />
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-slide">
+            <img src="./asset/index-pic/plean-info2.png" />
+          </div>
         </div>
-        <div class="swiper mySwiper" style="padding: 1rem 2.5rem">
-          <div
-            class="swiper-wrapper"
-            style="
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper mySwiper" style="padding: 1rem 2.5rem">
+        <div class="swiper-wrapper" style="
               display: grid;
               grid-template-columns: repeat(2, 1fr);
               row-gap: 1rem;
               height: auto;
               justify-items: center;
-            "
-          >
-            <div class="swiper-slide">
-              <img src="./asset/index-pic/plean-info1.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./asset/index-pic/plean-info2.png" />
-            </div>
+            ">
+          <div class="swiper-slide">
+            <img src="./asset/index-pic/plean-info1.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/index-pic/plean-info2.png" />
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- end ingredient -->
-
-    <section class="connected" id="plean-connected">
-        <div class="title">
-            <h1>STAY CONNECTED</h1>
-        </div>
-        <div class="connected-group">
-            <div class="connected-box">
-                <div class="connected-review">
-                    <a href=""><img class = "nonstar" src="./asset/index-pic/plean-connected-edit.png" alt=""></a>
-                    <a class = "btn" href="">อ่านรีวิวจากผู้ทานจริง</a>
-                    <a href=""><img class ="redstar" src="./asset/index-pic/plean-connected.png" alt=""></a>
-                </div>
-            </div>
-        <div class="connected-social">
-          <div>
-            <h5>หจก. เมนเทรด อินเตอร์เนชั่นแนล</h5>
-            <p>
-              32 ซอยศูนย์วิจัย 8 (3) ถนนเพชรบุรีตัดใหม่ <br />
-              แขวงบางกะปิ เขตห้วยขวาง <br />
-              กรุงเทพมหานคร 10310
-            </p>
-            <br>
-            <p>
-              วันจันทร์ - ศุกร์ : 9:00 – 18:00 น. <br />
-              วันเสาร์ - อาทิตย์ : 10:00 –18:00 น.
-            </p>
-          </div>
-          <div class="menu-connected">
-            <ul class="connected">
-              <li>
-                <a href="tel:+66889150093"><i class="fas fa-phone-volume"></i> 088 915 0093</a>
-              </li>
-              <li>
-                <a href=""><i class="fas fa-envelope"></i> info@p-lean</a>
-              </li>
-              <li>
-                <a href="facebook.com/p.leanprotein.th"><i class="fab fa-facebook"></i> p.leanprotein.th</a>
-              </li>
-            </ul>
-            <ul class="connected">
-              <li>
-                <a href="instagram.com/p.lean_protein.th"
-                  ><i class="fab fa-instagram"></i> p.lean_protein.th</a
-                >
-              </li>
-              <li>
-                <a href=""><i class="fab fa-line"></i> @Plean</a>
-              </li>
-              <li>
-                <a href="shopee.co.th/p.lean_protein.th"
-                  ><i><img src="./asset/index-pic/shopee.svg" alt="" /></i>
-                  p.lean_protein.th</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end connected -->
-
-    <div class="toprounded-btn">
-      <a href="#" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
-      <a href="#" class="text-top-btn">
-        <p>TOP</p>
-      </a>
     </div>
+  </section>
 
-    <!-- end toprounded-btn -->
+  <!-- end ingredient -->
 
-    <footer>
-      <p>ลิขสิทธิ์ 2564 โดย หจก. เมนเทรด อินเตอร์เนชั่นแนล. | Belong-To</p>
-    </footer>
+  <section class="connected" id="plean-connected">
+    <div class="title">
+      <h1>STAY CONNECTED</h1>
+    </div>
+    <div class="connected-group">
+      <div class="connected-box">
+        <div class="connected-review">
+          <a href=""><img class="nonstar" src="./asset/index-pic/plean-connected-edit.png" alt=""></a>
+          <a class="btn" href="">อ่านรีวิวจากผู้ทานจริง</a>
+          <a href=""><img class="redstar" src="./asset/index-pic/plean-connected.png" alt=""></a>
+        </div>
+      </div>
+      <div class="connected-social">
+        <div>
+          <h5>หจก. เมนเทรด อินเตอร์เนชั่นแนล</h5>
+          <p>
+            32 ซอยศูนย์วิจัย 8 (3) ถนนเพชรบุรีตัดใหม่ <br />
+            แขวงบางกะปิ เขตห้วยขวาง <br />
+            กรุงเทพมหานคร 10310
+          </p>
+          <br>
+          <p>
+            วันจันทร์ - ศุกร์ : 9:00 – 18:00 น. <br />
+            วันเสาร์ - อาทิตย์ : 10:00 –18:00 น.
+          </p>
+        </div>
+        <div class="menu-connected">
+          <ul class="connected">
+            <li>
+              <a href="tel:+66889150093"><i class="fas fa-phone-volume"></i> 088 915 0093</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-envelope"></i> info@p-lean</a>
+            </li>
+            <li>
+              <a href="https://m.facebook.com/p.leanprotein.th" target="_blank"><i class="fab fa-facebook"></i>
+                p.leanprotein.th</a>
+            </li>
+          </ul>
+          <ul class="connected">
+            <li>
+              <a href="https://www.instagram.com/p.lean_protein.th/" target="_blank"><i class="fab fa-instagram"></i>
+                p.lean_protein.th</a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-line"></i> @Plean</a>
+            </li>
+            <li>
+              <a href="https://shopee.co.th/p.lean_protein.th" target="_blank"><i><img
+                    src="./asset/index-pic/shopee.svg" alt="" /></i>
+                p.lean_protein.th</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- end footer -->
+  <!-- end connected -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <div class="toprounded-btn">
+    <a href="#" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
+    <a href="#" class="text-top-btn">
+      <p>TOP</p>
+    </a>
+  </div>
 
-    <script>
-        const scroll = new SmoothScroll('a[href*="#"]', {
-            header: '[data-scroll-header]',
-            speed: 500,
-            speedAsDuration: true
-        });
-    </script>
+  <!-- end toprounded-btn -->
 
-    <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  </body>
+  <footer>
+    <p>ลิขสิทธิ์ 2564 โดย หจก. เมนเทรด อินเตอร์เนชั่นแนล. | Belong-To</p>
+  </footer>
+
+  <!-- end footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      header: '[data-scroll-header]',
+      speed: 500,
+      speedAsDuration: true
+    });
+  </script>
+
+  <script src="./js/index.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,337 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Detail</title>
-    <script
-      src="https://kit.fontawesome.com/cf2146b72f.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <link rel="stylesheet" href="./css/productDetail.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Detail</title>
+  <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./css/productDetail.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-      $(function () {
-          $("#tabs").tabs();
-      });
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
   </script>
-  </head>
+</head>
 
-  <body>
-    <nav>
-        <div class="container">
-            <div class="nav">
-                <div class="logo">
-                    <li><a href="#"><img src="./asset/index-pic/logo.png" alt=""></a></li>
-                </div>
-                <div class="menu-btn" onclick="openNavMenu()">
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                  <div class="point-menu"></div>
-                </div>
-                <ul class="menu" id="showmenu">
-                  <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-toknow" aria-current="page">รู้จักพลีน</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-product">ผลิตภัณฑ์พลีน</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-ingredient">ทานอย่างไรให้เห็นผล</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-connected">รีวิว</a></li>
-                  <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-connected">ติดต่อสั่งซื้อ</a></li>
-                </ul>
-            </div>
-          </ul>
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <li><a href="#"><img src="./asset/index-pic/logo.png" alt=""></a></li>
+        </div>
+        <div class="menu-btn" onclick="openNavMenu()">
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+          <div class="point-menu"></div>
+        </div>
+        <ul class="menu" id="showmenu">
+          <div class="menu-btn menu-times" onclick="closeNavMenu()"><i class="fas fa-times"></i></div>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-toknow"
+              aria-current="page">รู้จักพลีน</a></li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-product">ผลิตภัณฑ์พลีน</a></li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-ingredient">ทานอย่างไรให้เห็นผล</a>
+          </li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-connected">รีวิว</a></li>
+          <li onclick="closeNavMenu()"><a data-scroll class="nav-link" href="/#plean-connected">ติดต่อสั่งซื้อ</a></li>
+        </ul>
+      </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- end nav -->
+
+  <section class="productdetail">
+    <div class="bg-logo">
+      <img src="./asset/productDetail-pic/bg-PLEAN.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="position-box-top">
+        <div class="back-btn">
+          <a href=""><i class="fas fa-chevron-left"></i> ย้อนกลับ</a>
+        </div>
+        <div class="forward-btn">
+          <a href="">ถัดไป <i class="fas fa-chevron-right"></i></a>
         </div>
       </div>
-    </nav>
 
-    <!-- end nav -->
-
-    <section class="productdetail">
-      <div class="bg-logo">
-        <img src="./asset/productDetail-pic/bg-PLEAN.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="position-box-top">
-          <div class="back-btn">
-            <a href=""><i class="fas fa-chevron-left"></i> ย้อนกลับ</a>
-          </div>
-          <div class="forward-btn">
-            <a href="">ถัดไป <i class="fas fa-chevron-right"></i></a>
-          </div>
-        </div>
-
-        <div class="productdetail-box">
-          <div class="productdetail-flex">
-            <div class="productdetail-left">
-              <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct4.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct5.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct6.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct7.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct8.png" />
-                  </div>
+      <div class="productdetail-box">
+        <div class="productdetail-flex">
+          <div class="productdetail-left">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct1.jpg" />
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct7.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct8.png" />
+                </div>
               </div>
-              <div class="swiper mySwiper" style="padding: 1rem 2.5rem">
-                <div
-                  class="swiper-wrapper"
-                  style="
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper mySwiper" style="padding: 1rem 2.5rem">
+              <div class="swiper-wrapper" style="
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     row-gap: 1rem;
                     height: auto;
-                  "
-                >
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct4.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct5.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct6.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct7.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./asset/productDetail-pic/detailproduct8.png" />
-                  </div>
+                  ">
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct7.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./asset/productDetail-pic/detailproduct8.png" />
                 </div>
               </div>
             </div>
-            <div class="productdetail-right">
-              <div class="productdetail-right-title">
-                <h1>P.Lean Soybean Protein Isolate Cocoa Flavour</h1>
-                <p>Net Weight 245 g (35 g x 7 sachets)</p>
-              </div>
-              <div class="productdetail-right-benefit">
-                <p>เหมาะสำหรับสายเบิร์น ช่วยเร่งการเผาผลาญ</p>
-                <br />
-                <p>
-                  ผลิตภัณฑ์เสริมอาหารโปรตีนจากพืช ทดแทนมื้ออาหาร เร่งการเผาผลาญ
-                  สารสกัดธรรมชาติ 21 ชนิด ใส่ใจทุกขั้นตอนการผลิต
-                  รับรองมาตรฐานและความปลอดภัย เพื่อที่มีคุณภาพที่สุด
-                  ประโยชน์ครบถ้วน
-                </p>
-                <br />
-                <p>
-                  P.Lean อัดแน่นด้วยโปรตีน 21 กรัม สกัดจากถั่วเหลือง ถั่วลันเตา
-                  จมูกข้าว และฟักทอง
-                </p>
-                <li>ช่วยแทนมื้ออาหารได้ อิ่มนาน ลดทานจุบจิบ และมีไฟเบอร์สูง</li>
-                <li>มีกาบา (GABA) จากจมูกข้าว ช่วยในการบำรุงสมอง</li>
-                <li>
-                  มี SOD พรีเมี่ยมจากฝรั่งเศส มีคอลลาเจนสูง บำรุงผิวระดับเซลล์
-                </li>
-                <li>
-                  มี L-Carnitine และ Creatine ช่วยเผาผลาญ ช่วยให้หุ่นลดลงไวขึ้น
-                </li>
-                <li>
-                  มีสาร ต้านอนุมูลอิสระ จาก Super Foods & Super Fruits
-                  คืนความสดใส
-                </li>
-                <li>หมดปัญหา สำหรับคนที่แพ้นม ไม่มีแลคโตส ช่วยให้ย่อยง่าย</li>
-                <li>ไม่มีน้ำตาล</li>
-                <li>ไม่มีไขมันทรานส์</li>
-                <li>ไม่มีคลอเรสเตอรอล</li>
-                <li>มี Gluten Free</li>
-              </div>
-              <div class="productdetail-right-ingrediant">
-                <h3>ส่วนประกอบสำคัญ</h3>
-                <br />
-                <p>
-                  โปรตีนสกัดจากถั่วเหลือง 20,000 มก., โปรตีนจากถั่วลันเตา 3,000
-                  มก., สารสกัดจากจมูกข้าว 1,000 มก., ไซโล-โอลิโกแซ็กคาไรด์ 500
-                  มก., แคลเซียม คาร์บอเนต 390 มก., แมกนีเซียม อะมิโน แอซิด คีเลต
-                  20% 263 มก., ผงมากิเบอร์รี่ 250 มก., แอล-คาร์นิทีน ฟูมาเรท 200
-                  มก., สารสกัดจากอาซาอิ 150 มก., สารสกัดเอลเดอร์เบอร์รี่ 150
-                  มก., สารสกัดจากบลูเบอร์รี่ 150 มก., สารสกัดจากเปลือกองุ่น 125
-                  มก., แอล-ลูซีน 125 มก., ครีเอทีน โมโนไฮเดรต 100 มก., ผงฟักทอง
-                  100 มก., แอล-ไอโซลูซีน 62.50 มก., แอล-วาลีน 62.50 มก.,
-                  สารสกัดจากอัลฟัลฟา 50 มก., ผงปวยเล้ง 50 มก.,
-                  สารสกัดจากโกจิเบอร์รี่ 42 มก., ไนอะซินาไมด์ 20 มก., ไอรอน
-                  อะมิโน แอซิด คีเลต 20% 12 มก., โทอะมีน โมโนไนเตรต 1.50 มก.,
-                  ไรโบฟลาวิน 1.50 มก., วิตามิน บี 12 0.002 มก.,
-                </p>
-              </div>
-              <div class="productdetail-right-howto">
-                <h3>ทานอย่างไรให้เห็นผลดีที่สุด?</h3>
-                <br />
-                <li>
-                  ทานวันละ 1 – 2 ซอง ทุกวัน ถ้าทานติดต่อกัน 3 เดือน
-                  จะเห็นผลที่ดีขึ้นชัดเจน
-                </li>
-                <li>ทานแทนมื้ออาหาร หรือ ระหว่างวันแทนขนมจุบจิบ</li>
-                <li>
-                  ทานง่ายและสะดวก สามารถทานได้ทุกที่ทุกเวลาเพียงแค่หยิบซองมาฉีก
-                  ชง ดื่มได้เลย!
-                </li>
-                <li>
-                  เพียงแค่เชคผสมน้ำหรือนมอัลมอนด์ ก็ได้ High Protein Isolate
-                  ด้วยโปรตีน ไร้ไขมันแฝงเข้มข้นถึง 4 ชนิด ประกอบด้วย
-                  ถั่วลั่นเตา, จมูกข้าว, ฟักทอง, ถั่วเหลืองไอโซเลท,
-                  ทั้งหมดอุดมไปด้วย Vitamin ช่วยเพิ่มพลังงานและฟื้นฟูร่างกาย 
-                </li>
-                <br />
-                <p>
-                  <span>หมายเหตุ</span> :
-                  ไม่แนะนำให้ทานโปรตีนจากพืชแทนอาหารทุกมื้อ
-                  ควรทานควบคู่กับมื้อหลัก และงดของหวานของมัน
-                  ตัวผลิตภัณฑ์ไม่สามารถรักษาโรคได้ ควรทานเป็นอาหารเสริมเท่านั้น
-                </p>
-              </div>
-              <div class="productdetail-right-price">
-                <h3>ราคา <span>250</span> บาท</h3>
-                <p class="cross">300 บาท</p>
-                <br />
-                <p>เลข อย. 13-1-15859-5-0606</p>
-                <ul class="productdetail-buy">
-                  <h3>สั่งซื้อได้ที่</h3>
-                  <li>
-                    <a href=""
-                      ><img
-                        src="./asset/productDetail-pic/facebookr.svg"
-                        alt="facebook.com/p.leanprotein.th"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="./asset/productDetail-pic/line.svg" alt=""
-                    /></a>
-                  </li>
-                  <li>
-                    <a href="shopee.co.th/p.lean_protein.th"
-                      ><img src="./asset/productDetail-pic/shopee.svg" alt=""
-                    /></a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="productdetail-right">
+            <div class="productdetail-right-title">
+              <h1>P.Lean Soybean Protein Isolate Cocoa Flavour</h1>
+              <p>Net Weight 245 g (35 g x 7 sachets)</p>
             </div>
-          </div>
-        </div>
-        <div class="position-box-bottom">
-          <div class="back-btn">
-            <a href=""><i class="fas fa-chevron-left"></i> ย้อนกลับ</a>
-          </div>
-          <div class="forward-btn">
-            <a href="">ถัดไป <i class="fas fa-chevron-right"></i></a>
+            <div class="productdetail-right-benefit">
+              <p>เหมาะสำหรับสายเบิร์น ช่วยเร่งการเผาผลาญ</p>
+              <br />
+              <p>
+                ผลิตภัณฑ์เสริมอาหารโปรตีนจากพืช ทดแทนมื้ออาหาร เร่งการเผาผลาญ
+                สารสกัดธรรมชาติ 21 ชนิด ใส่ใจทุกขั้นตอนการผลิต
+                รับรองมาตรฐานและความปลอดภัย เพื่อที่มีคุณภาพที่สุด
+                ประโยชน์ครบถ้วน
+              </p>
+              <br />
+              <p>
+                P.Lean อัดแน่นด้วยโปรตีน 21 กรัม สกัดจากถั่วเหลือง ถั่วลันเตา
+                จมูกข้าว และฟักทอง
+              </p>
+              <li>ช่วยแทนมื้ออาหารได้ อิ่มนาน ลดทานจุบจิบ และมีไฟเบอร์สูง</li>
+              <li>มีกาบา (GABA) จากจมูกข้าว ช่วยในการบำรุงสมอง</li>
+              <li>
+                มี SOD พรีเมี่ยมจากฝรั่งเศส มีคอลลาเจนสูง บำรุงผิวระดับเซลล์
+              </li>
+              <li>
+                มี L-Carnitine และ Creatine ช่วยเผาผลาญ ช่วยให้หุ่นลดลงไวขึ้น
+              </li>
+              <li>
+                มีสาร ต้านอนุมูลอิสระ จาก Super Foods & Super Fruits
+                คืนความสดใส
+              </li>
+              <li>หมดปัญหา สำหรับคนที่แพ้นม ไม่มีแลคโตส ช่วยให้ย่อยง่าย</li>
+              <li>ไม่มีน้ำตาล</li>
+              <li>ไม่มีไขมันทรานส์</li>
+              <li>ไม่มีคลอเรสเตอรอล</li>
+              <li>มี Gluten Free</li>
+            </div>
+            <div class="productdetail-right-ingrediant">
+              <h3>ส่วนประกอบสำคัญ</h3>
+              <br />
+              <p>
+                โปรตีนสกัดจากถั่วเหลือง 20,000 มก., โปรตีนจากถั่วลันเตา 3,000
+                มก., สารสกัดจากจมูกข้าว 1,000 มก., ไซโล-โอลิโกแซ็กคาไรด์ 500
+                มก., แคลเซียม คาร์บอเนต 390 มก., แมกนีเซียม อะมิโน แอซิด คีเลต
+                20% 263 มก., ผงมากิเบอร์รี่ 250 มก., แอล-คาร์นิทีน ฟูมาเรท 200
+                มก., สารสกัดจากอาซาอิ 150 มก., สารสกัดเอลเดอร์เบอร์รี่ 150
+                มก., สารสกัดจากบลูเบอร์รี่ 150 มก., สารสกัดจากเปลือกองุ่น 125
+                มก., แอล-ลูซีน 125 มก., ครีเอทีน โมโนไฮเดรต 100 มก., ผงฟักทอง
+                100 มก., แอล-ไอโซลูซีน 62.50 มก., แอล-วาลีน 62.50 มก.,
+                สารสกัดจากอัลฟัลฟา 50 มก., ผงปวยเล้ง 50 มก.,
+                สารสกัดจากโกจิเบอร์รี่ 42 มก., ไนอะซินาไมด์ 20 มก., ไอรอน
+                อะมิโน แอซิด คีเลต 20% 12 มก., โทอะมีน โมโนไนเตรต 1.50 มก.,
+                ไรโบฟลาวิน 1.50 มก., วิตามิน บี 12 0.002 มก.,
+              </p>
+            </div>
+            <div class="productdetail-right-howto">
+              <h3>ทานอย่างไรให้เห็นผลดีที่สุด?</h3>
+              <br />
+              <li>
+                ทานวันละ 1 – 2 ซอง ทุกวัน ถ้าทานติดต่อกัน 3 เดือน
+                จะเห็นผลที่ดีขึ้นชัดเจน
+              </li>
+              <li>ทานแทนมื้ออาหาร หรือ ระหว่างวันแทนขนมจุบจิบ</li>
+              <li>
+                ทานง่ายและสะดวก สามารถทานได้ทุกที่ทุกเวลาเพียงแค่หยิบซองมาฉีก
+                ชง ดื่มได้เลย!
+              </li>
+              <li>
+                เพียงแค่เชคผสมน้ำหรือนมอัลมอนด์ ก็ได้ High Protein Isolate
+                ด้วยโปรตีน ไร้ไขมันแฝงเข้มข้นถึง 4 ชนิด ประกอบด้วย
+                ถั่วลั่นเตา, จมูกข้าว, ฟักทอง, ถั่วเหลืองไอโซเลท,
+                ทั้งหมดอุดมไปด้วย Vitamin ช่วยเพิ่มพลังงานและฟื้นฟูร่างกาย 
+              </li>
+              <br />
+              <p>
+                <span>หมายเหตุ</span> :
+                ไม่แนะนำให้ทานโปรตีนจากพืชแทนอาหารทุกมื้อ
+                ควรทานควบคู่กับมื้อหลัก และงดของหวานของมัน
+                ตัวผลิตภัณฑ์ไม่สามารถรักษาโรคได้ ควรทานเป็นอาหารเสริมเท่านั้น
+              </p>
+            </div>
+            <div class="productdetail-right-price">
+              <h3>ราคา <span>250</span> บาท</h3>
+              <p class="cross">300 บาท</p>
+              <br />
+              <p>เลข อย. 13-1-15859-5-0606</p>
+              <ul class="productdetail-buy">
+                <h3>สั่งซื้อได้ที่</h3>
+                <li>
+                  <a href="https://m.facebook.com/p.leanprotein.th" target="_blank"><img
+                      src="./asset/productDetail-pic/facebookr.svg" alt=""></a>
+                </li>
+                <li>
+                  <a href=""><img src="./asset/productDetail-pic/line.svg" alt=""></a>
+                </li>
+                <li>
+                  <a href="https://shopee.co.th/p.lean_protein.th" target="_blank"><img
+                      src="./asset/productDetail-pic/shopee.svg" alt=""></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- end productdetail -->
-
-    <section class="reviewer">
-      <div class="title">
-        <h1>รีวิวจากผู้ทานจริง</h1>
-        <img src="./asset/productDetail-pic/prop-1.png" alt="">
-      </div>
-        <div class="reviewer-group">
-            <div class="reviewer-box">
-                <div class="reviewer-review">
-                    <a href=""><img class = "nonstar" src="./asset/index-pic/plean-connected-edit.png" alt=""></a>
-                    <a class = "btn" href="">อ่านรีวิวจากผู้ทานจริง</a>
-                    <a href=""><img class ="redstar" src="./asset/index-pic/plean-connected.png" alt=""></a>
-                </div>
-            </div>
-            <div class="plean-social">
-                <div class="plean-youtube-box">
-                    <iframe src="https://www.youtube.com/embed/XbsJSQEQ1bY" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <img class="prop-right" src="./asset/productDetail-pic/prop-youtube-right.png" alt="">
-                </div>
-            </div>
+      <div class="position-box-bottom">
+        <div class="back-btn">
+          <a href=""><i class="fas fa-chevron-left"></i> ย้อนกลับ</a>
         </div>
-    </section>
-
-    <!-- end reviewer -->
-
-    <div class="toprounded-btn">
-      <a data-scroll href="#" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
-      <a data-scroll href="#" class="text-top-btn"><p>TOP</p></a>
+        <div class="forward-btn">
+          <a href="">ถัดไป <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- end toprounded-btn -->
+  <!-- end productdetail -->
 
-    <footer>
-      <p>ลิขสิทธิ์ 2564 โดย หจก. เมนเทรด อินเตอร์เนชั่นแนล. | Belong-To</p>
-    </footer>
+  <section class="reviewer">
+    <div class="title">
+      <h1>รีวิวจากผู้ทานจริง</h1>
+      <img src="./asset/productDetail-pic/prop-1.png" alt="">
+    </div>
+    <div class="reviewer-group">
+      <div class="reviewer-box">
+        <div class="reviewer-review">
+          <a href=""><img class="nonstar" src="./asset/index-pic/plean-connected-edit.png" alt=""></a>
+          <a class="btn" href="">อ่านรีวิวจากผู้ทานจริง</a>
+          <a href=""><img class="redstar" src="./asset/index-pic/plean-connected.png" alt=""></a>
+        </div>
+      </div>
+      <div class="plean-social">
+        <div class="plean-youtube-box">
+          <iframe src="https://www.youtube.com/embed/XbsJSQEQ1bY" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <img class="prop-right" src="./asset/productDetail-pic/prop-youtube-right.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- end footer -->
+  <!-- end reviewer -->
 
-    <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.mySwiper', {
-        spaceBetween: 10,
-        slidesPerView: 4,
-        allowTouchMove: false,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      const swiper2 = new Swiper('.mySwiper2', {
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    </script>
-  </body>
+  <div class="toprounded-btn">
+    <a data-scroll href="#" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
+    <a data-scroll href="#" class="text-top-btn">
+      <p>TOP</p>
+    </a>
+  </div>
+
+  <!-- end toprounded-btn -->
+
+  <footer>
+    <p>ลิขสิทธิ์ 2564 โดย หจก. เมนเทรด อินเตอร์เนชั่นแนล. | Belong-To</p>
+  </footer>
+
+  <!-- end footer -->
+
+  <script src="./js/index.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      allowTouchMove: false,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    const swiper2 = new Swiper('.mySwiper2', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+</body>
+
 </html>
