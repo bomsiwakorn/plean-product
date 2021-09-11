@@ -170,12 +170,12 @@ section.content {
   position: relative;
 }
 .plean-title h1 {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 600;
   color: #f27321;
 }
 .plean-title p {
-  font-size: 30px;
+  font-size: 50px;
   color: #74411b;
 }
 .plean-title img {
@@ -214,11 +214,12 @@ section.content {
 .plean-toknow-left h2 {
   font-size: 25px;
   color: #f27321;
-  font-weight: 500;
+  font-weight: 600;
 }
 .plean-toknow-left p {
   font-size: 16px;
   color: #74411b;
+  font-weight: 300;
 }
 .plean-toknow-right {
   width: 440px;
@@ -258,13 +259,14 @@ section.content {
 }
 .plean-content-text h4 {
   color: #f27321;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 .plean-content-text p {
   margin-top: 10px;
   color: #74411b;
   font-size: 16px;
+  font-weight: 300;
 }
 .plean-content-text {
   padding-top: 10px;
@@ -314,12 +316,13 @@ section.content {
 }
 .plean-award-text h3 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   color: #f27321;
 }
 .plean-award-text p {
   font-size: 16px;
   color: #74411b;
+  font-weight: 300;
 }
 @media screen and (max-width: 1920px) {
   .plean-youtube .prop-left {
@@ -432,7 +435,7 @@ section.content {
     left: -11px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 505px) {
   .plean-content-left,
   .plean-content-center,
   .plean-content-right {
@@ -443,6 +446,8 @@ section.content {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding: 2rem;
   }
   .plean-award-text {
     width: 100%;
@@ -473,12 +478,20 @@ section.content {
     left: -25px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
   .plean-title h1 {
-    font-size: 35px;
+    font-size: 50px;
   }
   .plean-title p {
-    font-size: 25px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .plean-title h1 {
+    font-size: 45px;
+  }
+  .plean-title p {
+    font-size: 27px;
   }
   .plean-youtube-box iframe {
     height: 300px;
@@ -526,6 +539,11 @@ section.product {
 }
 .product-title h1 {
   font-size: 25px;
+  font-weight: 600;
+  color: #f27321;
+}
+.product-title h4 {
+  font-size: 16px;
   font-weight: 500;
   color: #f27321;
 }
@@ -534,6 +552,7 @@ section.product {
   color: #74411b;
   text-align: center;
   width: 755px;
+  font-weight: 300;
 }
 .product-grid {
   margin-top: 4rem;
@@ -573,18 +592,19 @@ section.product {
   width: 100%;
 }
 .product-box h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #f27321;
 }
 .product-box p {
   font-size: 16px;
-  font-style: italic;
+  font-weight: 300;
   color: #74411b;
 }
 .product-box span {
   font-size: 16px;
-  color: #74411b;
+  font-weight: 500;
+  color: #f27321;
 }
 .product .prop-product-bottom {
   width: 240px;
@@ -660,7 +680,7 @@ section.benefits {
 }
 .benefits-title h1 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   color: #f27321;
 }
 
@@ -681,12 +701,12 @@ section.benefits {
   top: 141px;
 }
 .benefits-text-top h3 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: #f27321;
 }
 .benefits-text-top li {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: #74411b;
   line-height: 1.3;
@@ -720,12 +740,12 @@ section.benefits {
   width: 295px;
 }
 .benefits-text-bottom h3 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: #f27321;
 }
 .benefits-text-bottom li {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: #74411b;
   line-height: 1.3;
@@ -812,6 +832,9 @@ section.benefits {
     display: flex;
     justify-content: center;
   }
+  .benefits-text-top {
+    padding-right: 1rem;
+  }
   .benefits-top img {
     top: -35px;
     width: 370px;
@@ -836,6 +859,7 @@ section.benefits {
   }
   .benefits-text-bottom {
     padding-left: 2.5rem;
+    padding-right: 1rem;
   }
   .benefits-bottom img {
     padding-top: 2rem;
@@ -917,11 +941,12 @@ section.ingredient {
 }
 .ingredient-left-title h1 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600px;
   color: #f27321;
 }
 .ingredient-left-title p {
   font-size: 16px;
+  font-weight: 300;
   color: #74411b;
 }
 
@@ -940,6 +965,10 @@ section.ingredient {
 .ingredient-right-img img {
   width: 400px;
   cursor: pointer;
+  transition: .3s;
+}
+.ingredient-right-img img:hover {
+  transform: translateY(-10px);
 }
 @media screen and (max-width: 1230px) {
   .ingredient-left-title {
@@ -973,7 +1002,7 @@ section.ingredient {
 }
 @media screen and (max-width: 500px) {
   .ingredient-left-title {
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 1rem 2rem 1rem;
   }
   .ingredient-left-img {
     padding: 1rem;
@@ -1004,7 +1033,7 @@ section.connected h1 {
   font-size: 36px;
   text-align: center;
   color: #f27321;
-  font-weight: 500;
+  font-weight: 600;
 }
 .connected-group {
   width: 100%;
@@ -1061,7 +1090,7 @@ section.connected h1 {
 .connected-social h5 {
   color: #f27321;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .connected-social p {
   color: #74411b;

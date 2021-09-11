@@ -219,7 +219,7 @@ div.bg-logo img {
 }
 .productdetail-right h1 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   color: #f27626;
 }
 .productdetail-right h3 {
@@ -230,6 +230,7 @@ div.bg-logo img {
 .productdetail-right p,
 .productdetail-right li {
   font-size: 16px;
+  font-weight: 300;
   color: #74411b;
 }
 .productdetail-right-title,
@@ -252,7 +253,7 @@ div.bg-logo img {
   position: relative;
 }
 .productdetail-right-price span {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
   padding: 0 5px;
 }
@@ -263,7 +264,7 @@ div.bg-logo img {
   background-color: #74411b;
   transform: rotate(7deg);
   position: absolute;
-  top: 83px;
+  top: 74px;
 }
 .productdetail-buy {
   padding-top: 1rem;
@@ -329,10 +330,10 @@ section.reviewer {
   align-items: center;
 }
 section.reviewer h1 {
-  font-size: 36px;
+  font-size: 26px;
   text-align: center;
   color: #f27321;
-  font-weight: 500;
+  font-weight: 600;
 }
 section.reviewer .title img {
   position: relative;
@@ -470,6 +471,7 @@ footer p {
 @media screen and (max-width: 860px) {
   .reviewer-group {
     flex-direction: column;
+    padding: 0;
   }
   .reviewer-box {
     padding: 0;
@@ -525,9 +527,6 @@ footer p {
   }
 }
 @media screen and (max-width: 430px) {
-  section.reviewer h1 {
-    font-size: 30px;
-  }
   .reviewer-review a img {
     width: 94%;
   }
