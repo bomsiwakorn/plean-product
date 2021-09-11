@@ -18,8 +18,8 @@ body {
   position: relative;
 }
 .container {
-  max-width: 1600px;
-  width: 97%;
+  max-width: 1400px;
+  width: 94%;
   margin: 0 auto;
 }
 
@@ -76,7 +76,8 @@ ul.menu li a {
   }
 }
 @media screen and (max-width: 1050px) {
-  nav, .nav {
+  nav,
+  .nav {
     height: 60px;
   }
   .nav {
@@ -167,7 +168,7 @@ div.bg-logo img {
 .productdetail-left {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 .productdetail-left-show {
   display: flex;
@@ -214,7 +215,7 @@ div.bg-logo img {
 }
 
 .productdetail-right {
-  width: 50%;
+  width: 60%;
   padding: 0 2rem;
 }
 .productdetail-right h1 {
@@ -299,10 +300,13 @@ div.bg-logo img {
   .position-box-top {
     padding: 2rem 1rem;
   }
-}
-@media screen and (max-width: 765px) {
-  .position-box-top,
-  .position-box-bottom {
+  .productdetail-left {
+    width: 60%;
+  }
+  .productdetail-right {
+    width: 100%;
+  }
+  .productdetail-right {
     padding: 2rem 1rem;
   }
   .productdetail-flex {
@@ -310,12 +314,19 @@ div.bg-logo img {
     align-items: center;
     justify-content: center;
   }
-  .productdetail-left,
-  .productdetail-right {
-    width: 100%;
-  }
-  .productdetail-right {
+}
+@media screen and (max-width: 765px) {
+  .position-box-top,
+  .position-box-bottom {
     padding: 2rem 1rem;
+  }
+  .productdetail-left {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .productdetail-left {
+    width: 92%;
   }
 }
 
@@ -634,28 +645,31 @@ footer p {
 .swiper-slide {
   font-size: 18px;
 }
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   cursor: pointer;
-}
+} */
 .swiper {
   width: 100%;
 }
-.swiper-slide {
+/* .swiper-slide {
   width: 100%;
-}
-.swiper-slide img {
-  width: 100%;
-}
+} */
+
 .mySwiper {
   padding: 10px 0;
 }
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
   border: 4px solid #f27321;
+  /* height: 100% !important;
+  width: 100% !important; */
 }
 .swiper-wrapper {
+  width: 100%;
+}
+.swiper-slide {
   width: 100%;
 }
 .swiper-slide img {
@@ -668,4 +682,24 @@ footer p {
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   color: #f27321;
+}
+/* .swiper-slide-active {
+  width: 80px;
+  height: 80px;
+} */
+.sub-image-detail img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* .sub-image-detail {
+  width: 100% !important;
+  height: 100% !important;
+  border: 4px solid transparent;
+  transition: 0.4s;
+  margin-left: 1rem !important;
+} */
+.sub-image-detail:hover {
+  border: 4px solid #f27321;
 }
