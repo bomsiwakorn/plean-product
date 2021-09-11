@@ -1416,6 +1416,7 @@ footer p {
 .close-gallery-modal i {
   font-size: 30px;
   cursor: pointer;
+  color: #74411b;
 }
 .gallery-plean-modal-show {
   display: block;
