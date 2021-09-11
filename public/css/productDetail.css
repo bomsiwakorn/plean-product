@@ -102,7 +102,7 @@ ul.menu li a {
   ul.menu .menu-times {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 20px;
   }
   ul.menu {
     background: #e89b5d;
@@ -131,6 +131,11 @@ ul.menu li a {
   }
   ul.menu.togglemenu {
     right: 0;
+  }
+  .fa-times-thin:before {
+    content: '\00d7';
+    color: #74411b;
+    font-size: 50px;
   }
 }
 
