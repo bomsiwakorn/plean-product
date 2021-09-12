@@ -1102,12 +1102,18 @@ section.connected h1 {
 .connected-review .redstar:hover  {
   opacity: 0;
 }
-/* .connected-review:hover .btn {
+.connected-review .review:hover  {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #74411b;
   color: #74411b;
-} */
+}
+.connected-review .pleancom:hover  {
+  transition: 0.3s;
+  background: transparent;
+  border: 1px solid #74411b;
+  color: #74411b;
+}
 .connected-review .btn {
   background: #f27321;
   margin-top: 1rem;

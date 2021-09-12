@@ -376,10 +376,16 @@ section.reviewer .title img {
   width: 345px;
   transition: 0.5s;
 }
-.reviewer-review:hover .redstar {
+.reviewer-review .redstar:hover  {
   opacity: 0;
 }
-.reviewer-review:hover .btn {
+.reviewer-review .review:hover  {
+  transition: 0.3s;
+  background: transparent;
+  border: 1px solid #74411b;
+  color: #74411b;
+}
+.reviewer-review .pleancom:hover  {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #74411b;
