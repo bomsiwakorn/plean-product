@@ -361,16 +361,6 @@ section.content {
   position: relative;
   z-index: 0;
 }
-.plean-award-bg div {
-  width: 1000px;
-  height: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #faddc6;
-  position: absolute;
-  top: -218px;
-  z-index: 0;
-}
 @media screen and (max-width: 1920px) {
   .plean-youtube .prop-left {
     left: 320px;
@@ -468,67 +458,12 @@ section.content {
     width: 100%;
   }
 }
-@media screen and (max-width: 760px) {
-  .plean-award-bg div {
-    top: -265px;
-    height: 180px;
-  }
-}
-@media screen and (max-width: 727px) {
-  .plean-award-bg div {
-    top: -290px;
-    height: 195px;
-  }
-}
 @media screen and (max-width: 700px) {
   .plean-toknow-left {
     padding: 2rem 1.5rem;
     width: 100%;
   }
 }
-@media screen and (max-width: 635px) {
-  .plean-award-bg div {
-    top: -332px;
-    height: 244px;
-  }
-}
-@media screen and (max-width: 462px) {
-  .plean-award-bg div {
-    top: -355px;
-    height: 279px;
-  }
-}
-@media screen and (max-width: 416px) {
-  .plean-award-bg div {
-    top: -357px;
-    height: 271px;
-  }
-}
-@media screen and (max-width: 415px) {
-  .plean-award-bg div {
-    top: -380px;
-    height: 291px;
-  }
-}
-/* @media screen and (max-width: 361px) {
-  .plean-award-bg div {
-    top: -422px;
-    height: 332px;
-  }
-}
-@media screen and (max-width: 326px) {
-  .plean-award-bg div {
-    top: -444px;
-    height: 351px;
-  }
-}
-@media screen and (max-width: 290px) {
-  .plean-award-bg div {
-    top: -508px;
-    height: 418px;
-  }
-} */
-
 @media screen and (max-width: 600px) {
   .plean-youtube {
     margin-top: 3rem;
@@ -1158,22 +1093,21 @@ section.connected h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
 }
 .connected-review a img {
   width: 345px;
   object-fit: cover;
   transition: 0.5s;
 }
-.connected-review:hover .redstar {
+.connected-review .redstar:hover  {
   opacity: 0;
 }
-.connected-review:hover .btn {
+/* .connected-review:hover .btn {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #74411b;
   color: #74411b;
-}
+} */
 .connected-review .btn {
   background: #f27321;
   margin-top: 1rem;
@@ -1607,6 +1541,20 @@ footer p {
   width: 45%;
   z-index: 1;
   padding-right: 8px;
+  padding-bottom: 1.5rem;
+}
+.plean-award-text-v2 h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #f27321;
+}
+.plean-award-text-v2 p {
+  font-size: 16px;
+  color: #74411b;
+  font-weight: 300;
+}
+.plean-award-text-v2 span {
+  font-weight: 500;
 }
 .plean-award-bg-v2 {
   position: absolute;
