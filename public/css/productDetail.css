@@ -559,7 +559,7 @@ footer p {
 .toprounded-btn {
   position: relative;
   height: 20px;
-  background-color: #faf1e1;
+  background-color: #f8f5f3;
 }
 .arrow-top-btn,
 .text-top-btn {
@@ -568,6 +568,7 @@ footer p {
   border-radius: 50%;
   background-color: #f1e0c2;
   cursor: pointer;
+  position: relative;
 }
 .text-top-btn {
   position: absolute;
@@ -582,20 +583,12 @@ footer p {
   font-weight: 500;
   color: #f27321;
 }
-.arrow-top-btn {
-  position: fixed;
-  bottom: 109px;
-  right: 35px;
-  z-index: 50;
+.menu-bottom-wrapper {
+  position: absolute;
 }
-.arrow-top-btn i {
-  position: fixed;
-  bottom: 110px;
-  right: 49px;
-  font-size: 35px;
-  color: #f27321;
-  z-index: 101;
-}
+/* .menu-bottom-line {
+  position: absolute;
+} */
 
 @keyframes anime {
   0% {
@@ -609,6 +602,27 @@ footer p {
     transform: scale(1.3, 1.3);
     opacity: 0;
   }
+}
+.arrow-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 35px;
+  z-index: 50;
+}
+.arrow-top-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-size: 35px;
+  color: #f27321;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .arrow-top-btn {
   transition: 0.2s;
@@ -635,6 +649,46 @@ footer p {
 .arrow-top-btn {
   border-radius: 50%;
   background: #f1e0c2;
+}
+
+/* Bottom */
+.menu-bottom-facebook,
+.menu-bottom-line,
+.menu-bottom-shopee,
+.menu-bottom-call {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  opacity: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.menu-bottom-facebook img,
+.menu-bottom-line img,
+.menu-bottom-shopee img,
+.menu-bottom-call img {
+  width: 100%;
+  height: 100%;
+}
+.menu-bottom-facebook-show {
+  top: -245px;
+  opacity: 1;
+}
+.menu-bottom-line-show {
+  top: -185px;
+  opacity: 1;
+}
+.menu-bottom-shopee-show {
+  top: -125px;
+  opacity: 1;
+}
+.menu-bottom-call-show {
+  top: -65px;
+  opacity: 1;
+}
+.btn-close-menu {
+  display: none;
 }
 
 @media screen and (max-width: 680px) {

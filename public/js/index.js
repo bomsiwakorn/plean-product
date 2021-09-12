@@ -23,14 +23,6 @@ function showGalleryModal(index) {
   bgModal.classList.toggle('bg-gallery-modal-show');
   html.classList.toggle('html-gallery-modal-show');
 
-  const swiper = new Swiper('.mySwiper', {
-    spaceBetween: 10,
-    initialSlide: iSlide,
-    slidesPerView: 4,
-    allowTouchMove: false,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
   const swiper2 = new Swiper('.mySwiper2', {
     spaceBetween: 10,
     initialSlide: iSlide,
@@ -38,8 +30,19 @@ function showGalleryModal(index) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    thumbs: {
-      swiper: swiper,
-    },
   });
+}
+
+function toggleMenuBottom() {
+  const facebook = document.querySelector('.menu-bottom-facebook');
+  const line = document.querySelector('.menu-bottom-line');
+  const shopee = document.querySelector('.menu-bottom-shopee');
+  const call = document.querySelector('.menu-bottom-call');
+  const icon = document.getElementById('icon-menu-bottom');
+
+  facebook.classList.toggle('menu-bottom-facebook-show');
+  line.classList.toggle('menu-bottom-line-show');
+  shopee.classList.toggle('menu-bottom-shopee-show');
+  call.classList.toggle('menu-bottom-call-show');
+  icon.classList.toggle('fa-times');
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plean</title>
+  <title>พลีน : โปรตีนจากพืชทดแทนมื้ออาหาร เร่งการเผาผลาญ ประโยชน์ครบถ้วน</title>
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
@@ -244,7 +244,8 @@
             จมูกข้าว และฟักทอง
           </h3>
           <br />
-          <li>ช่วยแทนมื้ออาหารได้ อิ่มนาน ลดทานจุบจิบ และมีไฟเบอร์สูง</li>
+          <ul style="margin-left: 1rem;">
+            <li>ช่วยแทนมื้ออาหารได้ อิ่มนาน ลดทานจุบจิบ และมีไฟเบอร์สูง</li>
           <li>มีกาบา (GABA) จากจมูกข้าว ช่วยในการบำรุงสมอง</li>
           <li>
             มี SOD พรีเมี่ยมจากฝรั่งเศส มีคอลลาเจนสูง บำรุงผิวระดับเซลล์
@@ -260,6 +261,7 @@
           <li>ไม่มีไขมันทรานส์</li>
           <li>ไม่มีคลอเรสเตอรอล</li>
           <li>มี Gluten Free</li>
+          </ul>
         </div>
         <div class="benefits-img-top" data-aos="fade-left" data-aos-duration="1200">
           <img src="./asset/index-pic/plean-benefits1.png" alt="" />
@@ -273,16 +275,18 @@
             ได้แบบที่ใจต้องการ
           </h3>
           <br />
-          <li>Lean Burning Cal รส Cocoa สูตรเบิร์นไว ช่วยเร่งการเผาผลาญ</li>
-          <li>
-            Lean Glowing Skin รส Matcha Berry สูตรลีน ความงามผิวจากภายใน
-          </li>
-          <li>คอเลสเตอรอลและไขมัน 0%</li>
-          <li>ให้พลังงานเพียง 140 กิโลแคลลอรี</li>
-          <li>
-            เป็นสูตรไม่ผสมนม และไม่ใส่น้ำตาล ความหวานมาจากซูคราโลส
-            (คนเป็นเบาหวานทานได้)
-          </li>
+          <ul style="margin-left: 1rem;">
+            <li>Lean Burning Cal รส Cocoa สูตรเบิร์นไว ช่วยเร่งการเผาผลาญ</li>
+            <li>
+              Lean Glowing Skin รส Matcha Berry สูตรลีน ความงามผิวจากภายใน
+            </li>
+            <li>คอเลสเตอรอลและไขมัน 0%</li>
+            <li>ให้พลังงานเพียง 140 กิโลแคลลอรี</li>
+            <li>
+              เป็นสูตรไม่ผสมนม และไม่ใส่น้ำตาล ความหวานมาจากซูคราโลส
+              (คนเป็นเบาหวานทานได้)
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -341,22 +345,6 @@
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-      </div>
-      <div class="swiper mySwiper" style="padding: 1rem 2.5rem">
-        <div class="swiper-wrapper" style="
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
-              row-gap: 1rem;
-              height: auto;
-              justify-items: center;
-            ">
-          <div class="swiper-slide">
-            <img src="./asset/index-pic/plean-info1.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./asset/index-pic/plean-info2.png" />
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -423,11 +411,22 @@
 
   <!-- end connected -->
 
-  <div class="toprounded-btn">
-    <a href="#" class="arrow-top-btn"><i class="fas fa-sort-up"></i></a>
-    <a href="#" class="text-top-btn">
-      <p>TOP</p>
-    </a>
+  <div class="menu-bottom-wrapper">
+    <div class="arrow-top-btn">
+      <i id="icon-menu-bottom" onclick="toggleMenuBottom()" class="fas fa-ellipsis-v"></i>
+      <div class="menu-bottom-facebook">
+        <a target="_blank" href="https://m.facebook.com/p.leanprotein.th"><img src="./asset/bottom-menu/facebook.png" alt=""></a>
+      </div>
+      <div class="menu-bottom-line">
+        <a target="_blank" href="https://lin.ee/Ve4jvjA"><img src="./asset/bottom-menu/line.png" alt=""></a>
+      </div>
+      <div class="menu-bottom-shopee">
+        <a target="_blank" href="https://shopee.co.th/p.lean_protein.th"><img src="./asset/bottom-menu/shopee.png" alt=""></a>
+      </div>
+      <div class="menu-bottom-call">
+        <a href="tel:+66616694224"><img src="./asset/bottom-menu/call.png" alt=""></a>
+      </div>
+    </div>
   </div>
 
   <!-- end toprounded-btn -->
