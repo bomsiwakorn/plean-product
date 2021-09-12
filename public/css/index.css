@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -77,7 +77,8 @@ ul.menu li a {
   }
 }
 @media screen and (max-width: 1050px) {
-  nav, .nav {
+  nav,
+  .nav {
     height: 60px;
   }
   .nav {
@@ -216,7 +217,7 @@ section.content {
   z-index: 1;
 }
 .plean-toknow-left h2 {
-  font-size: 25px;
+  font-size: 26px;
   color: #f27321;
   font-weight: 600;
 }
@@ -251,7 +252,7 @@ section.content {
   width: 440px;
 }
 .plean-content-left img {
-  transition: .3s;
+  transition: 0.3s;
 }
 .plean-content-left img:hover {
   transform: translateY(-10px);
@@ -261,7 +262,7 @@ section.content {
   width: 440px;
 }
 .plean-content-center img {
-  transition: .3s;
+  transition: 0.3s;
 }
 .plean-content-center img:hover {
   transform: translateY(-10px);
@@ -271,7 +272,7 @@ section.content {
   width: 440px;
 }
 .plean-content-right img {
-  transition: .3s;
+  transition: 0.3s;
 }
 .plean-content-right img:hover {
   transform: translateY(-10px);
@@ -282,7 +283,7 @@ section.content {
 .plean-content-text h4 {
   color: #f27321;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .plean-content-text p {
   margin-top: 10px;
@@ -341,7 +342,7 @@ section.content {
   width: 360px;
 }
 .plean-award-text h3 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600;
   color: #f27321;
 }
@@ -349,6 +350,9 @@ section.content {
   font-size: 16px;
   color: #74411b;
   font-weight: 300;
+}
+.plean-award-text p > span {
+  font-weight: 500;
 }
 @media screen and (max-width: 1920px) {
   .plean-youtube .prop-left {
@@ -486,7 +490,6 @@ section.content {
   .plean-content-right {
     width: 100%;
   }
-  
 }
 @media screen and (max-width: 480px) {
   .plean-toknow-left {
@@ -560,13 +563,13 @@ section.product {
   margin-bottom: 1.5rem;
 }
 .product-title h1 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600;
   color: #f27321;
 }
 .product-title h4 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: #f27321;
 }
 .product-title p {
@@ -701,7 +704,7 @@ section.benefits {
   align-items: center;
 }
 .benefits-title h1 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600;
   color: #f27321;
 }
@@ -723,8 +726,8 @@ section.benefits {
   top: 141px;
 }
 .benefits-text-top h3 {
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   color: #f27321;
 }
 .benefits-text-top li {
@@ -762,8 +765,8 @@ section.benefits {
   width: 295px;
 }
 .benefits-text-bottom h3 {
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   color: #f27321;
 }
 .benefits-text-bottom li {
@@ -962,7 +965,7 @@ section.ingredient {
   padding: 0 6rem 2rem 10rem;
 }
 .ingredient-left-title h1 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600px;
   color: #f27321;
 }
@@ -987,7 +990,7 @@ section.ingredient {
 .ingredient-right-img img {
   width: 400px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .ingredient-right-img img:hover {
   transform: translateY(-10px);
@@ -1111,7 +1114,7 @@ section.connected h1 {
 }
 .connected-social h5 {
   color: #f27321;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 .connected-social p {
@@ -1415,6 +1418,7 @@ footer p {
 }
 .close-gallery-modal i {
   font-size: 30px;
+  color: #74411b;
   cursor: pointer;
 }
 .gallery-plean-modal-show {
