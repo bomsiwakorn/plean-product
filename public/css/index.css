@@ -1102,13 +1102,13 @@ section.connected h1 {
 .connected-review .redstar:hover {
   opacity: 0;
 }
-.connected-review .review:hover  {
+.connected-review .review:hover {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #74411b;
   color: #74411b;
 }
-.connected-review .pleancom:hover  {
+.connected-review .pleancom:hover {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #74411b;
@@ -1566,7 +1566,7 @@ footer p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 140px;
+  height: 160px;
   background: #faddc6;
 }
 @media screen and (max-width: 1000px) {
