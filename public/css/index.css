@@ -448,7 +448,7 @@ section.content {
   }
   .plean-award-img img {
     padding: 0;
-  } 
+  }
   .plean-award-img {
     width: 500px;
   }
@@ -1099,7 +1099,7 @@ section.connected h1 {
   object-fit: cover;
   transition: 0.5s;
 }
-.connected-review .redstar:hover  {
+.connected-review .redstar:hover {
   opacity: 0;
 }
 .connected-review .review:hover  {
@@ -1526,7 +1526,7 @@ footer p {
 
 /* plean-awardv2 */
 .plean-award-wrapper {
-  width: 80%;
+  width: 1000px;
   margin: 5rem auto 7rem auto;
 }
 .plean-award-v2 {
@@ -1571,6 +1571,7 @@ footer p {
 }
 @media screen and (max-width: 1000px) {
   .plean-award-wrapper {
+    width: 80%;
     margin: 3rem auto 6rem auto;
   }
   .plean-award-v2 {
