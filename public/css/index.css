@@ -324,14 +324,14 @@ section.content {
 }
 .plean-award {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   margin-top: 2.5rem;
   margin-bottom: 6rem;
   padding: 1rem;
 }
 .plean-award-img {
-  width: 365px;
+  width: 560px;
   z-index: 2;
 }
 .plean-award-img img {
@@ -342,6 +342,7 @@ section.content {
 .plean-award-text {
   width: 360px;
   z-index: 2;
+  padding-bottom: 1.5rem;
 }
 .plean-award-text h3 {
   font-size: 26px;
@@ -361,8 +362,10 @@ section.content {
   z-index: 0;
 }
 .plean-award-bg div {
-  width: 100%;
+  width: 1000px;
   height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #faddc6;
   position: absolute;
   top: -218px;
@@ -460,11 +463,25 @@ section.content {
     top: -248px;
     height: 180px;
   }
+  .plean-award-img {
+    width: 500px;
+  }
 }
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 530px) {
+  .plean-award-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
   .plean-award-bg div {
-    top: -271px;
-    height: 204px;
+    top: -265px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 727px) {
+  .plean-award-bg div {
+    top: -290px;
+    height: 195px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -475,7 +492,7 @@ section.content {
 }
 @media screen and (max-width: 635px) {
   .plean-award-bg div {
-    top: -309px;
+    top: -332px;
     height: 244px;
   }
 }
@@ -487,31 +504,31 @@ section.content {
 }
 @media screen and (max-width: 461px) {
   .plean-award-bg div {
-    top: -331px;
+    top: -353px;
     height: 263px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 416px) {
   .plean-award-bg div {
-    top: -353px;
-    height: 291px;
+    top: -377px;
+    height: 282px;
   }
 }
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 362px) {
   .plean-award-bg div {
-    top: -394px;
-    height: 325px;
+    top: -415px;
+    height: 323px;
   }
 }
 @media screen and (max-width: 326px) {
   .plean-award-bg div {
-    top: -418px;
-    height: 348px;
+    top: -438px;
+    height: 341px;
   }
 }
 @media screen and (max-width: 290px) {
   .plean-award-bg div {
-    top: -480px;
+    top: -503px;
     height: 409px;
 
   }
@@ -1188,6 +1205,9 @@ section.connected h1 {
   color: #f27321;
   font-size: 18px;
   font-weight: 600;
+}
+.connected-social .text-light{
+  font-weight: 300;
 }
 .connected-social p {
   color: #74411b;
