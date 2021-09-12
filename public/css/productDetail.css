@@ -391,7 +391,7 @@ section.reviewer .title img {
   top: 0;
   right: 48px;
 }
-.reviewer-review a:nth-child(2) {
+.reviewer-review .btn {
   background: #f27321;
   margin-top: 1rem;
   width: 200px;
@@ -401,6 +401,7 @@ section.reviewer .title img {
   color: #fff;
   position: relative;
   left: -25px;
+  border: 1px solid #f27321;
 }
 .pleant-social {
   width: 100%;
@@ -503,7 +504,7 @@ footer p {
   .reviewer-review .redstar {
     top: 17px;
   }
-  .reviewer-review a:nth-child(2) {
+  .reviewer-review .btn {
     left: 0;
   }
   .plean-social {

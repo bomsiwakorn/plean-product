@@ -458,11 +458,7 @@ section.content {
   }
   .plean-award-img img {
     padding: 0;
-  }
-  .plean-award-bg div {
-    top: -248px;
-    height: 180px;
-  }
+  } 
   .plean-award-img {
     width: 500px;
   }
@@ -498,23 +494,24 @@ section.content {
 }
 @media screen and (max-width: 462px) {
   .plean-award-bg div {
-    top: -332px;
-    height: 267px;
-  }
-}
-@media screen and (max-width: 462px) {
-  .plean-award-bg div {
-    top: -363px;
+    top: -355px;
     height: 279px;
   }
 }
 @media screen and (max-width: 416px) {
   .plean-award-bg div {
+    top: -357px;
+    height: 271px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .plean-award-bg div {
     top: -380px;
-    height: 291px;
+    height: 292px;
+
+  }
 }
-}
-@media screen and (max-width: 362px) {
+/* @media screen and (max-width: 361px) {
   .plean-award-bg div {
     top: -422px;
     height: 332px;
@@ -531,7 +528,7 @@ section.content {
     top: -508px;
     height: 418px;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   .plean-youtube {
@@ -1178,7 +1175,7 @@ section.connected h1 {
   border: 1px solid #74411b;
   color: #74411b;
 }
-.connected-review a:nth-child(2) {
+.connected-review .btn {
   background: #f27321;
   margin-top: 1rem;
   width: 200px;
@@ -1318,7 +1315,7 @@ footer p {
     position: relative;
     left: 27px;
   }
-  .connected-review a:nth-child(2) {
+  .connected-review .btn {
     left: 0;
   }
 
